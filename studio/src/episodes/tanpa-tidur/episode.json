@@ -12,7 +12,8 @@
   "language": "Indonesian",
   "speed": 1.0,
   "num_step": 32,
-  "instruct": "male, young adult, moderate pitch"
+  "instruct": "male, young adult, moderate pitch",
+  "tighten": false
  },
  "script": [
   {
@@ -163,7 +164,11 @@
   "repeats": [
    {"at": "limbah", "clip": "bulb_pop", "n": 10, "every": 3, "gain": [0.15, 0.25], "pitch": [0.8, 1.2]}
   ],
-  "music": {"clip": "music", "from": "delapan", "until": "Tapi"},
+  "music": [
+   {"clip": "room_tone", "from": "Jam", "until": "Gimana", "gain": 0.4, "loop": true},
+   {"clip": "music", "from": "Gimana", "until": "Tapi", "gain": 1.0, "loop": true},
+   {"clip": "drone_hit", "from": "Tapi", "gain": 0.55, "loop": true}
+  ],
   "levels": {"sfx_lu": 1.5, "music_lu": -9.5}
  }
 }

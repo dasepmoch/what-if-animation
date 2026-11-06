@@ -249,55 +249,62 @@ else:
 
 # ---------------------------------------------------------------- tighten the pauses
 words = load_json(raw_words)
-G = {'word': 0.12, 'comma': 0.2, 'sentence': 0.3, 'question': 0.45, 'pairs': {}}
-G.update(ep.get('gaps', {}))
+tighten_enabled = ep.get('voice', {}).get('tighten', True)
 x = decode(raw_audio)
-cuts = []
 
+if not tighten_enabled:
+    write_wav(pub_dir(slug) / 'voice.wav', x)
+    save_json(ep_dir(slug) / 'words.json', words)
+    print(f'Pause tightening skipped (voice.tighten=false). Preserved full {len(x) / SR:.2f} s natural audio.')
+else:
+    G = {'word': 0.12, 'comma': 0.2, 'sentence': 0.3, 'question': 0.45, 'pairs': {}}
+    G.update(ep.get('gaps', {}))
+    cuts = []
 
-def bare(w):
-    return re.sub(r'[^\w]', '', w)
+    def bare(w):
+        return re.sub(r'[^\w]', '', w)
 
+    PAD = 0.08  # 80ms safety padding so cuts never chop off word tails or onsets
+    for a, b in zip(words, words[1:]):
+        gap = b['s'] - a['e']
+        key = bare(a['w']) + '|' + bare(b['w'])
+        if key in G['pairs']:
+            keep = G['pairs'][key]
+        elif '?' in a['p'] or '!' in a['p']:
+            keep = G['question']
+        elif '.' in a['p'] or ':' in a['p'] or ';' in a['p'] or '…' in a['p']:
+            keep = G['sentence']
+        elif ',' in a['p'] or '—' in a['p'] or '-' in a['p']:
+            keep = G['comma']
+        else:
+            keep = G['word']
+        if gap > keep:
+            mid = (a['e'] + b['s']) / 2
+            rm = gap - keep
+            c_start = max(a['e'] + PAD, mid - rm / 2)
+            c_end = min(b['s'] - PAD, mid + rm / 2)
+            if c_end > c_start + 0.04:
+                cuts.append((c_start, c_end))
+    parts, last = [], 0.0
+    for s, e in cuts:
+        parts.append(x[int(last * SR):int(s * SR)])
+        last = e
+    parts.append(x[int(last * SR):])
+    fade = int(0.004 * SR)  # a 4 ms fade either side of each join, so no click
+    for i, part in enumerate(parts):
+        part = part.copy()
+        if i > 0 and len(part) > fade:
+            part[:fade] *= np.linspace(0, 1, fade)
+        if i < len(parts) - 1 and len(part) > fade:
+            part[-fade:] *= np.linspace(1, 0, fade)
+        parts[i] = part
+    y = np.concatenate(parts)
+    write_wav(pub_dir(slug) / 'voice.wav', y)
 
-for a, b in zip(words, words[1:]):
-    gap = b['s'] - a['e']
-    key = bare(a['w']) + '|' + bare(b['w'])
-    if key in G['pairs']:
-        keep = G['pairs'][key]
-    elif '?' in a['p'] or '!' in a['p']:
-        keep = G['question']
-    elif '.' in a['p'] or ':' in a['p'] or ';' in a['p'] or '…' in a['p']:
-        keep = G['sentence']
-    elif ',' in a['p'] or '—' in a['p'] or '-' in a['p']:
-        keep = G['comma']
-    else:
-        keep = G['word']
-    if gap > keep:
-        mid = (a['e'] + b['s']) / 2
-        rm = gap - keep
-        cuts.append((mid - rm / 2, mid + rm / 2))
-parts, last = [], 0.0
-for s, e in cuts:
-    parts.append(x[int(last * SR):int(s * SR)])
-    last = e
-parts.append(x[int(last * SR):])
-fade = int(0.004 * SR)  # a 4 ms fade either side of each join, so no click
-for i, part in enumerate(parts):
-    part = part.copy()
-    if i > 0 and len(part) > fade:
-        part[:fade] *= np.linspace(0, 1, fade)
-    if i < len(parts) - 1 and len(part) > fade:
-        part[-fade:] *= np.linspace(1, 0, fade)
-    parts[i] = part
-y = np.concatenate(parts)
-write_wav(pub_dir(slug) / 'voice.wav', y)
+    def shift(t):
+        return t - sum(min(e, t) - s for s, e in cuts if t > s)
 
-
-def shift(t):
-    return t - sum(min(e, t) - s for s, e in cuts if t > s)
-
-
-out = [{'w': w['w'], 's': round(shift(w['s']), 3), 'e': round(shift(w['e']), 3), 'p': w.get('p', '')} for w in words]
-save_json(ep_dir(slug) / 'words.json', out)
-print(f'Tightened {len(cuts)} pauses, removed {sum(e - s for s, e in cuts):.2f} s: {len(x) / SR:.2f} s -> {len(y) / SR:.2f} s')
-print(' '.join(f"{w['w']}@{w['s']}" for w in out))
+    out = [{'w': w['w'], 's': round(shift(w['s']), 3), 'e': round(shift(w['e']), 3), 'p': w.get('p', '')} for w in words]
+    save_json(ep_dir(slug) / 'words.json', out)
+    print(f'Tightened {len(cuts)} pauses, removed {sum(e - s for s, e in cuts):.2f} s: {len(x) / SR:.2f} s -> {len(y) / SR:.2f} s')
+    print(' '.join(f"{w['w']}@{w['s']}" for w in out))

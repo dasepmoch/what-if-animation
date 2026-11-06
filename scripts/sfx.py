@@ -114,12 +114,29 @@ for r in S.get('repeats', []):
 # ---------------------------------------------------------------- music
 music = np.zeros(int(DUR * SR))
 M = S.get('music')
-if M:
-    m = clips[M['clip']]
-    m0 = int(cue(M['from']) / FPS * SR) if M.get('from') else 0
-    n = min(len(music) - m0, len(m))
-    music[m0:m0 + n] = m[:n]
-    for seg_look in M.get('reverse_looks', []):
+tracks = M if isinstance(M, list) else ([M] if M else [])
+for tr in tracks:
+    m = clips[tr['clip']]
+    m0 = int(cue(tr['from']) / FPS * SR) if tr.get('from') else 0
+    until_frame = cue(tr['until']) if tr.get('until') else None
+    end_idx = int(until_frame / FPS * SR) if until_frame is not None else len(music)
+    gain = float(tr.get('gain', 1.0))
+    pos = m0
+    while pos < end_idx and pos < len(music):
+        chunk_len = min(len(m), end_idx - pos, len(music) - pos)
+        music[pos:pos + chunk_len] += m[:chunk_len] * gain
+        pos += chunk_len
+        if not tr.get('loop', False):
+            break
+    if tr.get('until'):
+        end = min(len(music), int(cue(tr['until']) / FPS * SR))
+        f = int(0.08 * SR)
+        music[max(0, end - f):end] *= np.linspace(1, 0, min(f, end))
+        if until_frame is not None and not any(other.get('from') and cue(other['from']) >= until_frame for other in tracks):
+            music[end:] = 0
+
+for tr in tracks:
+    for seg_look in tr.get('reverse_looks', []):
         runs = []
         for s in tl['segments']:
             if s.get('look') == seg_look:
@@ -129,13 +146,8 @@ if M:
                     runs.append([s['a'], s['b']])
         for a, b in runs:
             i, j = int(a / FPS * SR), int(b / FPS * SR)
-            seg = music[max(0, i - 2 * (j - i)): i][::-2][: j - i]  # what just played, backwards at double speed
+            seg = music[max(0, i - 2 * (j - i)): i][::-2][: j - i]
             music[i: i + len(seg)] = seg * 0.55
-    if M.get('until'):
-        end = int(cue(M['until']) / FPS * SR)
-        f = int(0.03 * SR)
-        music[max(0, end - f): end] *= np.linspace(1, 0, min(f, end))
-        music[end:] = 0
 
 # ---------------------------------------------------------------- stems and levels against the voice
 pub = pub_dir(slug)
