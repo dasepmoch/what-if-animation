@@ -1,6 +1,6 @@
 ---
 name: what-if-animation
-description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Writes the script on the seven-beat What If formula, voices it with local neural TTS (OmniVoice + Whisper word timestamps) or ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), mixes and syncs the sound, and masters a finished 15-25 s episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
+description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Standard length: ~1 minute (50-60 s) for Shorts/TikTok or 15-25 s for short demos. Writes the script on the seven-beat What If formula, voices it with local neural TTS (OmniVoice + Whisper word timestamps, Indonesian default) or ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), mixes and syncs the sound, and masters a finished episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
 ---
 
 # What If animation
@@ -57,7 +57,7 @@ Read `references/formula.md`. Search YouTube for the premise first: if a What If
 episode, change the power or the rule. From the topic line, decide the power's word, its rule, three escalating
 demos and the turn (one real fact with a number). Write `src/episodes/<slug>/episode.json` with `id` (PascalCase,
 the composition name), `slug`, `topic`, `title` (two lines), `script` (one entry per beat) and `science` (each fact:
-the claim, the working, the source). 45 to 65 words. Read it aloud at pace: every line must be a picture.
+the claim, the working, the source). 120 to 160 words for a standard ~1 minute (50-60 s) episode (or 45 to 65 words for a quick 15-25 s teaser). Read it aloud at pace: every line must be a picture.
 
 ### 2. Voice
 
