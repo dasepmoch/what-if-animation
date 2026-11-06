@@ -1,8 +1,39 @@
 # Sound
 
-The genre is dense with sound: every visible action has its own effect, ambience fills every gap, a light music bed
-runs under the cold open and cuts out at the turn. All of it comes from ElevenLabs' sound generation, cached in
-`library/sfx/`, so a clip is paid for once and reused by every later episode.
+The genre is dense with sound: crisp voice acting, every visible action has its own effect, ambience fills every gap, a light music bed runs under the cold open and the fun part, and cuts or switches to ominous drone at the turn.
+
+## The Golden TTS Standard (Voice)
+
+All episodes follow the gold-standard audio configuration established by `putar-balik`:
+
+### 1. Model & Engine Configuration
+- **Engine:** OmniVoice (`k2-fsa/OmniVoice`) running locally on Apple Silicon GPU (`device: mps`, `dtype: float16`) via `~/Documents/VIDEOS-PROJECT/TTS-ENGINE`.
+- **Language:** `"Indonesian"` (or `"English"`).
+- **Speed:** `1.0` (optimal conversational tempo).
+- **Diffusion Steps:** `32` (`num_step: 32` for high acoustic clarity).
+- **Instruct:** `"male, young adult, moderate pitch"` (strict predefined vocabulary supported by OmniVoice).
+
+```json
+"voice": {
+  "provider": "omnivoice",
+  "language": "Indonesian",
+  "speed": 1.0,
+  "num_step": 32,
+  "instruct": "male, young adult, moderate pitch"
+}
+```
+
+### 2. The Script Cadence Rule (CRITICAL for Gold Quality)
+- **Sentences MUST be short and punchy (3 to 6 words each).** Never write long run-on sentences.
+- Place a period after every discrete action beat (e.g. *"Kopi tumpah dari meja. Putar balik. Kamu tangkap."*).
+- This ensures the neural model projects every word with punch, energy, and distinct articulation without monotone drift.
+
+### 3. Gap Timing & Zero-Clip Safety
+- Tighten gaps using standard thresholds: `"word": 0.12`, `"comma": 0.20`, `"sentence": 0.28`, `"question": 0.40`.
+- Safe margin: Minimum `PAD = 0.08s` (80 ms) is strictly enforced in `scripts/voice.py` so cuts never touch word boundaries or clip word endings.
+- Set `gaps.pairs` in `episode.json` for specific action beat cuts.
+
+---
 
 ## Writing the events
 

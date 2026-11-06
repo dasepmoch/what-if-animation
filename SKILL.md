@@ -59,27 +59,46 @@ demos and the turn (one real fact with a number). Write `src/episodes/<slug>/epi
 the composition name), `slug`, `topic`, `title` (two lines), `script` (one entry per beat) and `science` (each fact:
 the claim, the working, the source). 120 to 160 words for a standard ~1 minute (50-60 s) episode (or 45 to 65 words for a quick 15-25 s teaser). Read it aloud at pace: every line must be a picture.
 
-### 2. Voice
+### 2. Voice (The Golden TTS Standard)
 
 ```bash
 python <skill>/scripts/voice.py <slug>
 ```
 
-Synthesizes the episode's voice. By default, it uses the local **OmniVoice** engine (`~/Documents/VIDEOS-PROJECT/TTS-ENGINE`), running on Apple Silicon GPU (`mps`) with word timestamps aligned via Whisper (`openai/whisper-large-v3-turbo`). It tightens the pauses to the genre's pace, outputting `public/<slug>/voice.wav` and `src/episodes/<slug>/words.json`.
+Synthesizes the episode's voice using the local **OmniVoice** engine (`~/Documents/VIDEOS-PROJECT/TTS-ENGINE`), running on Apple Silicon GPU (`mps`, `float16`) with word timestamps aligned via Whisper (`openai/whisper-large-v3-turbo`).
 
-Voice configuration in `src/episodes/<slug>/episode.json` under `"voice"` (all optional):
+#### 🏆 Golden Standard Configuration (The `putar-balik` Rule)
+To achieve the crisp, punchy, energetic cadence seen in the gold-standard proof episode:
+1. **Model & Voice Config in `episode.json`:**
+   - **Provider:** `"omnivoice"` (100% offline, Apple Silicon MPS)
+   - **Language:** `"Indonesian"`
+   - **Speed:** `1.0` (optimal natural tempo)
+   - **Diffusion Steps:** `32` (`num_step: 32` for pristine acoustic fidelity)
+   - **Instruct:** `"male, young adult, moderate pitch"` (strict OmniVoice vocabulary)
+
 ```json
 "voice": {
-  "provider": "omnivoice",              // "omnivoice" (default, local/offline) or "elevenlabs"
-  "language": "Indonesian",             // default "Indonesian", atau "English"
-  "speed": 1.0,                         // speed multiplier
-  "num_step": 32,                       // 32 default (or 16 for faster generation)
-  "instruct": "male, energetic explainer narrator", // voice design style
-  "ref_audio": "refs/suara.wav"         // for voice cloning
+  "provider": "omnivoice",
+  "language": "Indonesian",
+  "speed": 1.0,
+  "num_step": 32,
+  "instruct": "male, young adult, moderate pitch"
 }
 ```
 
-Check the length (15-25 s) and the word times it prints. Retune pauses with `gaps` in `episode.json` and re-run: the take is cached by signature hash, so retuning is instant. Change a word and it resynthesizes.
+2. **The Script Cadence Rule (CRITICAL for Gold Quality):**
+   - **Short, punchy sentences (3 to 6 words each).** Never use long compound clauses.
+   - Put a period after every discrete action beat (e.g. *"Kopi tumpah dari meja. Putar balik. Kamu tangkap. Salah langkah di tangga. Putar balik. Kucingmu selamat."*).
+   - This guarantees that the neural model articulates every syllable with full projection, prevents robotic monotone drift, and creates the snappy *What If* suspense rhythm.
+
+3. **Gaps & Safe Tightening (Zero Clipped Syllables):**
+   - Default gaps: `"word": 0.12`, `"comma": 0.20`, `"sentence": 0.28`, `"question": 0.40`.
+   - Safe padding of `PAD = 0.08s` (80 ms) is enforced in `scripts/voice.py` so cuts never touch word boundaries or slice trailing syllables.
+   - For fast power cut points, specify `gaps.pairs` in `episode.json` (e.g. `"meja|Putar": 0.2`, `"balik|Kamu": 0.45`).
+
+4. **Mastering Loudness Target:**
+   - Integrated Loudness: **-14.0 LUFS (±0.5)**
+   - True Peak: **≤ -1.0 dBTP** (mastered via ffmpeg two-pass loudnorm in `scripts/master.py`).
 
 ### 3. Shot list
 

@@ -18,15 +18,15 @@
  "script": [
   {
    "beat": "1 cold open: demo 1 (selfish / gaming)",
-   "text": "Jam tiga pagi. Kamu masih terjaga menatap layar. Segar bugar."
+   "text": "Jam tiga pagi. Masih menatap layar. Segar bugar."
   },
   {
    "beat": "1 cold open: demo 2 (useful / studying)",
-   "text": "Jam lima subuh. Kamu belajar lima bab buku tebal. Paham semuanya."
+   "text": "Jam lima subuh. Lima bab buku tebal. Paham semua."
   },
   {
    "beat": "1 cold open: demo 3 (uncanny / sleeping world)",
-   "text": "Jam enam pagi. Kamu menatap sekeliling. Seluruh kota masih terlelap seperti orang mati."
+   "text": "Jam enam pagi. Menatap keluar jendela. Seluruh kota terlelap sunyi."
   },
   {
    "beat": "2 the premise (title card)",
@@ -34,23 +34,23 @@
   },
   {
    "beat": "3 the fun part: super productivity",
-   "text": "Kamu punya delapan jam ekstra setiap hari. Sepertiga hidup manusia yang terbuang sia-sia sekarang milikmu seutuhnya. Kamu kuasai tiga bahasa baru, selesaikan ratusan proyek, dan gak pernah merasa lelah."
+   "text": "Delapan jam ekstra setiap hari. Sepertiga hidup manusia sekarang milikmu. Kamu kuasai tiga bahasa baru. Selesaikan ratusan proyek. Gak pernah merasa lelah."
   },
   {
    "beat": "4 the turn: the cost (real science)",
-   "text": "Tapi tubuh manusia punya aturan mutlak: saat tidur, sistem glimfatik otak bekerja menyusutkan sel sebesar enam puluh persen untuk membersihkan racun beta amiloid. Tanpa tidur, limbah beracun itu mengendap di miliaran neuron otakmu. Itu nyata."
+   "text": "Tapi ada aturan mutlak. Saat tidur, sistem glimfatik otak bekerja. Sel menyusut enam puluh persen. Membersihkan racun beta amiloid. Tanpa tidur, limbah beracun mengendap di miliaran neuron. Itu nyata."
   },
   {
    "beat": "5 someone powerful notices: man in suit",
-   "text": "Di minggu keempat, halusinasi mulai merayap. Dan di seberang jalan, ada mobil hitam dengan pria berjas yang mencatat setiap detikmu."
+   "text": "Minggu keempat. Halusinasi mulai merayap. Di seberang jalan, ada mobil hitam. Pria berjas mencatat setiap detikmu."
   },
   {
    "beat": "6 family in danger: little sister",
-   "text": "Adikmu melihatmu berdiri di sudut gelap kamar tanpa pernah berkedip."
+   "text": "Adikmu membuka pintu kamar. Melihatmu mematung di sudut gelap. Tanpa pernah berkedip."
   },
   {
    "beat": "7 cliffhanger",
-   "text": "Jadi... berapa lama otakmu bisa bertahan sebelum meledak?"
+   "text": "Berapa lama otakmu bisa bertahan sebelum meledak?"
   }
  ],
  "science": [
@@ -103,7 +103,7 @@
   {"shot": "S5", "at": "buku"},
   {"shot": "S6", "at": "Paham"},
   {"shot": "S7", "at": "enam"},
-  {"shot": "S8", "at": "sekeliling"},
+  {"shot": "S8", "at": "Seluruh"},
   {"shot": "S9", "at": "Gimana"},
   {"shot": "S10", "at": "delapan"},
   {"shot": "S11", "at": "Sepertiga"},
