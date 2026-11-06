@@ -24,7 +24,7 @@ import sys, time
 
 import numpy as np
 
-from wi import SR, api, clip_path, credits_used, spent_since, decode, ep_dir, load_episode, load_json, log_cost, loudness, pub_dir, resolve, save_json, stem, write_wav
+from wi import SR, api, api_key, clip_path, credits_used, spent_since, decode, ep_dir, load_episode, load_json, log_cost, loudness, pub_dir, resolve, save_json, stem, write_wav
 
 slug = sys.argv[1]
 dry = '--dry' in sys.argv
@@ -50,6 +50,8 @@ print(f'{len(need)} clips, {len(need) - len(missing)} already in the library, {l
 if dry:
     sys.exit(0)
 if missing:
+    if not api_key(required=False):
+        raise SystemExit(f'Missing {len(missing)} sound clip(s) in library/sfx/ ({", ".join(missing)}). Place the audio files in library/sfx/ or set ELEVENLABS_API_KEY.')
     before, _ = credits_used()
     t0 = time.time()
     for n in missing:

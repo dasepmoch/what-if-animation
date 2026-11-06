@@ -3,15 +3,16 @@
 Type one line, "What if you could rewind 10 seconds?", and get a finished 15-25 second animated episode in the
 dusk-lit stick-figure style of the "What If" channels that took off on YouTube in October 2026.
 
-Every frame is drawn in code: the AI writes the scenes as SVG and Remotion renders them. The voice and the sound
-effects come from ElevenLabs. No image model, no video model, no drawing. It runs in Claude Code, or for free in
+Every frame is drawn in code: the AI writes the scenes as SVG and Remotion renders them. The voice
+is generated locally via OmniVoice (with Whisper word timestamps) or ElevenLabs. Sound effects come
+from the included library in `studio/library/sfx/`. No image model, no video model, no drawing. It runs in Claude Code, or for free in
 OpenCode with a free model. Made by [FreshStack](https://freshstack.ai).
 
 ## What it does
 
 1. **Writes the script** on the seven-beat What If formula (decoded from five scripts across four channels): a cold
    open of quick demos, the premise as a title card, the fun, and a turn built on one real, checked fact.
-2. **Voices it** with ElevenLabs, with word timings, and tightens the pauses to the genre's pace.
+2. **Voices it** with local OmniVoice (or ElevenLabs), with word timings via Whisper, and tightens the pauses to the genre's pace.
 3. **Lays out a shot list** on the words, at the genre's pace (about 27 cuts a minute in the opening and up).
 4. **Renders a storyboard** of one still per shot, before any animation.
 5. **Checks its own stills** against an 11-point checklist and fixes what reads wrong.
@@ -28,12 +29,8 @@ shot, so there is nothing to drift.
 - [Claude Code](https://claude.com/claude-code), or [OpenCode](https://opencode.ai) with a free model (see
   [Use it in OpenCode](#use-it-in-opencode-with-a-free-model))
 - Node 18 or newer, ffmpeg (with ffprobe), Python 3.9+ with `numpy` and `Pillow`
-- An [ElevenLabs](https://elevenlabs.io) API key in your environment or a `.env` file as `ELEVENLABS_API_KEY`.
-  The copy-paste episode cost 152 credits: 78 for the voice and 74 for 12 new sound effects. It reused 9 clips from
-  the starter library that ships in `studio/library/sfx/`, and every clip you generate joins it for the next
-  episode. Later runs cost 170 to 242 credits. ElevenLabs' free plan (10,000 credits a month when we checked, in
-  October 2026) covers about 40 episodes, but it's for non-commercial use and asks you to credit ElevenLabs, so
-  check its terms before you monetise.
+- Local TTS Engine: [OmniVoice](https://github.com/k2-fsa/OmniVoice) in `~/Documents/VIDEOS-PROJECT/TTS-ENGINE` (or set `TTS_ENGINE_DIR`), running 100% offline with zero API cost.
+- (Optional) An [ElevenLabs](https://elevenlabs.io) API key in your environment or a `.env` file as `ELEVENLABS_API_KEY` if you prefer ElevenLabs for voice or need to generate brand-new sound effects beyond the 40+ included clips in `studio/library/sfx/`.
 
 ## Install in Claude Code
 

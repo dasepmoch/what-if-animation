@@ -1,12 +1,12 @@
 ---
 name: what-if-animation
-description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Writes the script on the seven-beat What If formula, voices it with ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), generates and syncs the sound, and masters a finished 15-25 s episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
+description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Writes the script on the seven-beat What If formula, voices it with local neural TTS (OmniVoice + Whisper word timestamps) or ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), mixes and syncs the sound, and masters a finished 15-25 s episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
 ---
 
 # What If animation
 
 One topic line in, a finished 15-25 second episode out. Every frame is SVG that Claude writes (rendered by
-Remotion); the voice and the sound come from ElevenLabs. Two examples ship in `studio/src/episodes/`, both ready to
+Remotion); the voice is synthesized with local OmniVoice (with word timestamps via Whisper) or ElevenLabs, and sound comes from the included sound library. Two examples ship in `studio/src/episodes/`, both ready to
 render: `rewind` ("What if you could rewind 10 seconds?", the proof clip: shots played backwards as the power) and
 `copy-paste` ("What if you could copy and paste anything?", the skill's first full run: a new kitchen set, a
 schematic for the science beat, a cliffhanger blackout). Read the one closest to your topic before you start.
@@ -28,19 +28,15 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
   new look on the cast sheet (Mo's first hat was dropped for drifting toward one).
 - **Original stories.** The formula is shared; the episode isn't anyone else's. Don't remake a channel's title.
 - **Never claim the viral channels are made with Claude** or any other tool. Nobody has said how they're made.
-- **Keys by name only.** `ELEVENLABS_API_KEY`, from the environment or a `.env`
-  above the studio. Never print, paste or hardcode a key.
-- **Report the ElevenLabs credits** of every run: the scripts log them to `out/<slug>/costs.json` and `master.py`
-  totals them in `report.json`. The voice's cost is read from the account's history (exact); sound clips don't show
-  there, so their cost comes from the account counter, which can lag: re-read it before you report. Say the number
-  when you hand the episode over. The copy-paste run cost 152 credits (78 for the voice, 74 for 12 new clips).
+- **Keys by name only.** `ELEVENLABS_API_KEY` (optional, only needed if explicitly using ElevenLabs provider or generating brand-new sound effects not in `library/sfx/`). Never print, paste or hardcode a key.
+- **Report credits & offline runs:** With local OmniVoice, voice generation is 100% offline (0 credits). If ElevenLabs is used, the scripts log credits to `out/<slug>/costs.json` and `master.py` totals them in `report.json`. Say the number when you hand the episode over.
 - **Storyboard before animation.** No video render until the stills pass the self-check (step 5) and, when the person
   is in the loop, they've seen the board.
 - **Every fact is real.** A number in the script is worked out and sourced in the episode's `science` field first.
 
 ## Setup (once per machine)
 
-Needs Node 18+, ffmpeg and ffprobe on the PATH, Python 3.9+ with `numpy` and `Pillow`, and an ElevenLabs key.
+Needs Node 18+, ffmpeg and ffprobe on the PATH, Python 3.9+ with `numpy` and `Pillow`, and the local TTS engine (OmniVoice in `~/Documents/VIDEOS-PROJECT/TTS-ENGINE` or configured via `TTS_ENGINE_DIR`). ElevenLabs key is optional.
 
 ```bash
 cp -r <skill>/studio ./what-if-studio && cd what-if-studio && npm install
@@ -69,10 +65,21 @@ the claim, the working, the source). 45 to 65 words. Read it aloud at pace: ever
 python <skill>/scripts/voice.py <slug>
 ```
 
-One ElevenLabs take with character timestamps (the 356-character copy-paste take cost 78 credits), then the pauses
-cut to the genre's pace: `public/<slug>/voice.wav` and `src/episodes/<slug>/words.json`. Check the length (15-25 s)
-and the word times it prints. Retune pauses with `gaps` in `episode.json` and re-run: the take is cached, so that's free. Change a word
-and it calls the API again.
+Synthesizes the episode's voice. By default, it uses the local **OmniVoice** engine (`~/Documents/VIDEOS-PROJECT/TTS-ENGINE`), running on Apple Silicon GPU (`mps`) with word timestamps aligned via Whisper (`openai/whisper-large-v3-turbo`). It tightens the pauses to the genre's pace, outputting `public/<slug>/voice.wav` and `src/episodes/<slug>/words.json`.
+
+Voice configuration in `src/episodes/<slug>/episode.json` under `"voice"` (all optional):
+```json
+"voice": {
+  "provider": "omnivoice",              // "omnivoice" (default, local/offline) or "elevenlabs"
+  "language": "Indonesian",             // default "Indonesian", atau "English"
+  "speed": 1.0,                         // speed multiplier
+  "num_step": 32,                       // 32 default (or 16 for faster generation)
+  "instruct": "male, energetic explainer narrator", // voice design style
+  "ref_audio": "refs/suara.wav"         // for voice cloning
+}
+```
+
+Check the length (15-25 s) and the word times it prints. Retune pauses with `gaps` in `episode.json` and re-run: the take is cached by signature hash, so retuning is instant. Change a word and it resynthesizes.
 
 ### 3. Shot list
 
@@ -162,7 +169,7 @@ python <skill>/scripts/master.py <slug>
 
 Renders, brings the mix to -14 LUFS with peaks under -1 dBTP, and writes `out/<slug>/report.json` (length, loudness,
 pace, credits). Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final.mp4` and
-`out/<slug>/storyboard.jpg`, with the length, the ElevenLabs credits used, and anything you'd still improve.
+`out/<slug>/storyboard.jpg`, with the length, credits used (0 for local OmniVoice), and anything you'd still improve.
 
 ## Where an episode lives
 

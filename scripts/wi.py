@@ -73,7 +73,7 @@ def read_env(p):
     return raw.decode('utf-8-sig', errors='ignore')
 
 
-def api_key():
+def api_key(required=True):
     """The ElevenLabs key, by name only: from the environment, or the nearest .env above the studio. Never printed."""
     for n in KEY_NAMES:
         if os.environ.get(n):
@@ -85,7 +85,9 @@ def api_key():
                 for n in KEY_NAMES:
                     if line.strip().startswith(n + '='):
                         return line.split('=', 1)[1].strip().strip('"').strip("'")
-    raise SystemExit(f'No ElevenLabs key: set one of {KEY_NAMES} in the environment or a .env file.')
+    if required:
+        raise SystemExit(f'No ElevenLabs key: set one of {KEY_NAMES} in the environment or a .env file.')
+    return None
 
 
 def api(path, body=None, timeout=180):
@@ -123,7 +125,10 @@ def log_cost(slug, step, used, note=''):
     rows.append({'step': step, 'credits': used, 'note': note})
     save_json(p, rows)
     total = sum(r['credits'] for r in rows)
-    print(f'ElevenLabs: {step} used {used} credits{f" ({note})" if note else ""}; this episode so far: {total}')
+    if used > 0:
+        print(f'ElevenLabs: {step} used {used} credits{f" ({note})" if note else ""}; this episode so far: {total}')
+    else:
+        print(f'Audio ({step}): {note or "0 credits (local TTS)"}; total credits: {total}')
 
 
 # ---------------------------------------------------------------- words and cues

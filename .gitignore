@@ -5,3 +5,6 @@ __pycache__/
 .env
 .env.*
 what-if-studio/
+.DS_Store
+*.wav
+
