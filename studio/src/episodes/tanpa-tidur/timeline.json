@@ -1,0 +1,483 @@
+{
+ "slug": "tanpa-tidur",
+ "title": "GIMANA KALAU KAMU GAK PERNAH BUTUH TIDUR?",
+ "fps": 30,
+ "total": 1726,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 63,
+   "t0": 0,
+   "t1": 63,
+   "line": "Jam tiga pagi. Kamu masih terjaga"
+  },
+  {
+   "shot": "S2",
+   "a": 63,
+   "b": 92,
+   "t0": 0,
+   "t1": 29,
+   "line": "menatap layar."
+  },
+  {
+   "shot": "S3",
+   "a": 92,
+   "b": 126,
+   "t0": 0,
+   "t1": 34,
+   "line": "Segar bugar."
+  },
+  {
+   "shot": "S4",
+   "a": 126,
+   "b": 181,
+   "t0": 0,
+   "t1": 55,
+   "line": "Jam lima subuh. Kamu belajar lima"
+  },
+  {
+   "shot": "S5",
+   "a": 181,
+   "b": 206,
+   "t0": 0,
+   "t1": 25,
+   "line": "bab buku tebal."
+  },
+  {
+   "shot": "S6",
+   "a": 206,
+   "b": 246,
+   "t0": 0,
+   "t1": 40,
+   "line": "Paham semuanya. Jam"
+  },
+  {
+   "shot": "S7",
+   "a": 246,
+   "b": 291,
+   "t0": 0,
+   "t1": 45,
+   "line": "enam pagi. Kamu menatap"
+  },
+  {
+   "shot": "S8",
+   "a": 291,
+   "b": 394,
+   "t0": 0,
+   "t1": 103,
+   "line": "sekeliling. Seluruh kota masih terlelap seperti orang mati."
+  },
+  {
+   "shot": "S9",
+   "a": 394,
+   "b": 516,
+   "t0": 0,
+   "t1": 122,
+   "line": "Gimana kalau kamu gak pernah butuh tidur lagi seumur hidupmu? Kamu punya"
+  },
+  {
+   "shot": "S10",
+   "a": 516,
+   "b": 591,
+   "t0": 0,
+   "t1": 75,
+   "line": "delapan jam ekstra setiap hari."
+  },
+  {
+   "shot": "S11",
+   "a": 591,
+   "b": 639,
+   "t0": 0,
+   "t1": 48,
+   "line": "Sepertiga hidup manusia yang terbuang sia-sia"
+  },
+  {
+   "shot": "S12",
+   "a": 639,
+   "b": 699,
+   "t0": 0,
+   "t1": 60,
+   "line": "sekarang milikmu seutuhnya. Kamu"
+  },
+  {
+   "shot": "S13",
+   "a": 699,
+   "b": 761,
+   "t0": 0,
+   "t1": 62,
+   "line": "kuasai tiga bahasa baru, selesaikan"
+  },
+  {
+   "shot": "S14",
+   "a": 761,
+   "b": 831,
+   "t0": 0,
+   "t1": 70,
+   "line": "ratusan proyek, dan gak pernah merasa lelah."
+  },
+  {
+   "shot": "S15",
+   "a": 831,
+   "b": 893,
+   "t0": 0,
+   "t1": 62,
+   "line": "Tapi tubuh manusia punya"
+  },
+  {
+   "shot": "S16",
+   "a": 893,
+   "b": 956,
+   "t0": 0,
+   "t1": 63,
+   "line": "aturan mutlak: saat tidur, sistem"
+  },
+  {
+   "shot": "S17",
+   "a": 956,
+   "b": 1029,
+   "t0": 0,
+   "t1": 73,
+   "line": "glimfatik otak bekerja menyusutkan sel sebesar"
+  },
+  {
+   "shot": "S18",
+   "a": 1029,
+   "b": 1132,
+   "t0": 0,
+   "t1": 103,
+   "line": "enam puluh persen untuk membersihkan racun beta amiloid. Tanpa tidur,"
+  },
+  {
+   "shot": "S19",
+   "a": 1132,
+   "b": 1230,
+   "t0": 0,
+   "t1": 98,
+   "line": "limbah beracun itu mengendap di miliaran neuron otakmu. Itu"
+  },
+  {
+   "shot": "S20",
+   "a": 1230,
+   "b": 1284,
+   "t0": 0,
+   "t1": 54,
+   "line": "nyata. Di minggu keempat,"
+  },
+  {
+   "shot": "S21",
+   "a": 1284,
+   "b": 1346,
+   "t0": 0,
+   "t1": 62,
+   "line": "halusinasi mulai merayap. Dan"
+  },
+  {
+   "shot": "S22",
+   "a": 1346,
+   "b": 1376,
+   "t0": 0,
+   "t1": 30,
+   "line": "di seberang jalan, ada"
+  },
+  {
+   "shot": "S23",
+   "a": 1376,
+   "b": 1482,
+   "t0": 0,
+   "t1": 106,
+   "line": "mobil hitam dengan pria berjas yang mencatat setiap detikmu."
+  },
+  {
+   "shot": "S24",
+   "a": 1482,
+   "b": 1539,
+   "t0": 0,
+   "t1": 57,
+   "line": "Adikmu melihatmu berdiri di sudut gelap"
+  },
+  {
+   "shot": "S25",
+   "a": 1539,
+   "b": 1614,
+   "t0": 0,
+   "t1": 75,
+   "line": "kamar tanpa pernah berkedip. Jadi..."
+  },
+  {
+   "shot": "S26",
+   "a": 1614,
+   "b": 1726,
+   "t0": 0,
+   "t1": 112,
+   "line": "berapa lama otakmu bisa bertahan sebelum meledak?"
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium",
+   "key": 20,
+   "len": 63,
+   "first": 0,
+   "line": "Jam tiga pagi. Kamu masih terjaga",
+   "note": "Pip di kamar jam 3 pagi"
+  },
+  {
+   "id": "S2",
+   "size": "close-up, screen glow",
+   "key": 15,
+   "len": 29,
+   "first": 63,
+   "line": "menatap layar.",
+   "note": "Menatap layar laptop bercahaya"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "key": 15,
+   "len": 34,
+   "first": 92,
+   "line": "Segar bugar.",
+   "note": "Pip segar bugar tersenyum"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "key": 20,
+   "len": 55,
+   "first": 126,
+   "line": "Jam lima subuh. Kamu belajar lima",
+   "note": "Jam 5 subuh di meja belajar"
+  },
+  {
+   "id": "S5",
+   "size": "macro insert, top-down",
+   "key": 18,
+   "len": 25,
+   "first": 181,
+   "line": "bab buku tebal.",
+   "note": "Membaca lima bab buku tebal"
+  },
+  {
+   "id": "S6",
+   "size": "medium",
+   "key": 15,
+   "len": 40,
+   "first": 206,
+   "line": "Paham semuanya. Jam",
+   "note": "Pip menutup buku dengan puas"
+  },
+  {
+   "id": "S7",
+   "size": "wide",
+   "key": 20,
+   "len": 45,
+   "first": 246,
+   "line": "enam pagi. Kamu menatap",
+   "note": "Jam 6 pagi menatap luar jendela"
+  },
+  {
+   "id": "S8",
+   "size": "extreme wide, night sky",
+   "key": 25,
+   "len": 103,
+   "first": 291,
+   "line": "sekeliling. Seluruh kota masih terlelap seperti orang mati.",
+   "note": "Seluruh kota terlelap sunyi"
+  },
+  {
+   "id": "S9",
+   "size": "title, wide",
+   "key": 45,
+   "len": 122,
+   "first": 394,
+   "line": "Gimana kalau kamu gak pernah butuh tidur lagi seumur hidupmu? Kamu punya",
+   "note": "Title card di atas atap kota subuh"
+  },
+  {
+   "id": "S10",
+   "size": "medium",
+   "key": 20,
+   "len": 75,
+   "first": 516,
+   "line": "delapan jam ekstra setiap hari.",
+   "note": "8 jam ekstra, jam berputar cepat"
+  },
+  {
+   "id": "S11",
+   "size": "schematic",
+   "key": 25,
+   "len": 48,
+   "first": 591,
+   "line": "Sepertiga hidup manusia yang terbuang sia-sia",
+   "note": "Diagram sepertiga waktu hidup manusia"
+  },
+  {
+   "id": "S12",
+   "size": "close-up",
+   "key": 20,
+   "len": 60,
+   "first": 639,
+   "line": "sekarang milikmu seutuhnya. Kamu",
+   "note": "Waktu sekarang milikmu seutuhnya"
+  },
+  {
+   "id": "S13",
+   "size": "medium wide",
+   "key": 25,
+   "len": 62,
+   "first": 699,
+   "line": "kuasai tiga bahasa baru, selesaikan",
+   "note": "Menguasai 3 bahasa baru"
+  },
+  {
+   "id": "S14",
+   "size": "macro insert",
+   "key": 20,
+   "len": 70,
+   "first": 761,
+   "line": "ratusan proyek, dan gak pernah merasa lelah.",
+   "note": "Ratusan proyek selesai tanpa lelah"
+  },
+  {
+   "id": "S15",
+   "size": "close-up, low angle",
+   "key": 20,
+   "len": 62,
+   "first": 831,
+   "line": "Tapi tubuh manusia punya",
+   "note": "The Turn: lampu berkedip, bayangan merah"
+  },
+  {
+   "id": "S16",
+   "size": "medium, dramatic",
+   "key": 20,
+   "len": 63,
+   "first": 893,
+   "line": "aturan mutlak: saat tidur, sistem",
+   "note": "Aturan mutlak tubuh manusia"
+  },
+  {
+   "id": "S17",
+   "size": "schematic",
+   "key": 30,
+   "len": 73,
+   "first": 956,
+   "line": "glimfatik otak bekerja menyusutkan sel sebesar",
+   "note": "Sistem glimfatik otak bekerja"
+  },
+  {
+   "id": "S18",
+   "size": "macro insert",
+   "key": 25,
+   "len": 103,
+   "first": 1029,
+   "line": "enam puluh persen untuk membersihkan racun beta amiloid. Tanpa tidur,",
+   "note": "Sel menyusut 60 persen membilas racun"
+  },
+  {
+   "id": "S19",
+   "size": "macro insert",
+   "key": 25,
+   "len": 98,
+   "first": 1132,
+   "line": "limbah beracun itu mengendap di miliaran neuron otakmu. Itu",
+   "note": "Limbah racun beta-amiloid menumpuk"
+  },
+  {
+   "id": "S20",
+   "size": "extreme close-up",
+   "key": 18,
+   "len": 54,
+   "first": 1230,
+   "line": "nyata. Di minggu keempat,",
+   "note": "Pip menatap tajam: Itu nyata."
+  },
+  {
+   "id": "S21",
+   "size": "wide, dark",
+   "key": 25,
+   "len": 62,
+   "first": 1284,
+   "line": "halusinasi mulai merayap. Dan",
+   "note": "Halusinasi bayangan merayap di dinding"
+  },
+  {
+   "id": "S22",
+   "size": "over the shoulder, window",
+   "key": 20,
+   "len": 30,
+   "first": 1346,
+   "line": "di seberang jalan, ada",
+   "note": "Melihat ke bawah ke seberang jalan"
+  },
+  {
+   "id": "S23",
+   "size": "medium, street",
+   "key": 25,
+   "len": 106,
+   "first": 1376,
+   "line": "mobil hitam dengan pria berjas yang mencatat setiap detikmu.",
+   "note": "Mobil hitam dan pria berjas mencatat"
+  },
+  {
+   "id": "S24",
+   "size": "medium, doorway",
+   "key": 25,
+   "len": 57,
+   "first": 1482,
+   "line": "Adikmu melihatmu berdiri di sudut gelap",
+   "note": "Adik perempuan kaget menatap dari pintu"
+  },
+  {
+   "id": "S25",
+   "size": "wide, dark corner",
+   "key": 25,
+   "len": 75,
+   "first": 1539,
+   "line": "kamar tanpa pernah berkedip. Jadi...",
+   "note": "Pip berdiri mematung di sudut gelap"
+  },
+  {
+   "id": "S26",
+   "size": "extreme close-up, push in",
+   "key": 35,
+   "len": 112,
+   "first": 1614,
+   "line": "berapa lama otakmu bisa bertahan sebelum meledak?",
+   "note": "Mata terbuka lebar tak berkedip, cliffhanger"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 396
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "f": 833
+  },
+  {
+   "kind": "shake",
+   "len": 12,
+   "amp": 14,
+   "f": 833
+  },
+  {
+   "kind": "flash",
+   "color": "#FF2233",
+   "f": 1616
+  }
+ ],
+ "audio": {
+  "voice": "tanpa-tidur/voice.wav",
+  "sfx": "tanpa-tidur/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.7381,
+  "music": "tanpa-tidur/music.wav",
+  "musicVol": 0.1019
+ }
+}

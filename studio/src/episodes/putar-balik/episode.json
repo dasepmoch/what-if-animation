@@ -1,0 +1,163 @@
+{
+ "id": "PutarBalik",
+ "slug": "putar-balik",
+ "topic": "Gimana kalau kamu bisa memutar balik 10 detik?",
+ "title": [
+  "GIMANA KALAU KAMU BISA",
+  "PUTAR BALIK 10 DETIK?"
+ ],
+ "accent": "10",
+ "voice": {
+  "provider": "omnivoice",
+  "language": "Indonesian",
+  "speed": 1.0,
+  "num_step": 32,
+  "instruct": "male, young adult, moderate pitch"
+ },
+ "script": [
+  {
+   "beat": "1 cold open: three quick demos of the power",
+   "text": "Kopi tumpah dari meja. Putar balik. Kamu tangkap. Salah langkah di tangga. Putar balik. Kucingmu selamat. Salah jawab di kelas? Putar balik. Sekarang kamu jenius."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "Gimana kalau kamu bisa memutar balik sepuluh detik, kapan pun kamu mau?"
+  },
+  {
+   "beat": "3 the fun part, one line",
+   "text": "Kedengarannya luar biasa."
+  },
+  {
+   "beat": "4 the turn, as a cliffhanger",
+   "text": "Tapi ini bakal menghancurkan hidupmu."
+  }
+ ],
+ "science": [
+  {
+   "claim": "Memutar balik waktu membalikkan entropi lokal dan merusak hukum termodinamika.",
+   "working": "Hukum kedua termodinamika menyatakan entropi sistem terisolasi selalu bertambah (dS >= 0). Memutar balik waktu 10 detik membutuhkan penurunan entropi lokal secara instan, menghasilkan penolakan energi termal kolosal ke lingkungan sekitarnya.",
+   "source": "Second Law of Thermodynamics (Entropy); Clausius theorem"
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "meja|Putar": 0.2,
+   "balik|Kamu": 0.45,
+   "tangkap|Salah": 0.25,
+   "tangga|Putar": 0.2,
+   "selamat|Salah": 0.25,
+   "kelas|Putar": 0.2,
+   "jenius|Gimana": 0.35,
+   "mau|Kedengarannya": 0.4
+  }
+ },
+ "cast": ["pipHood"],
+ "shots": [
+  {"id": "Sh1", "size": "wide", "set": "study", "key": 14, "note": "Pip di meja, cangkir kopi tersenggol"},
+  {"id": "Sh2", "size": "macro insert, high angle", "set": "study (desk top)", "key": 8, "note": "cangkir meluncur ke tepi meja"},
+  {"id": "Sh3", "size": "floor insert", "set": "study (floor)", "key": 5, "note": "cangkir pecah, kilatan putih; PUTAR BALIK memutar waktu mundur"},
+  {"id": "Sh4", "size": "medium", "set": "study", "key": 18, "note": "ia berhasil menangkap cangkirnya"},
+  {"id": "Sh5", "size": "wide, camera follows", "set": "stairwell", "key": 16, "note": "ia tersandung kucing di tangga"},
+  {"id": "Sh6", "size": "top-down", "set": "stairwell (landing)", "key": 10, "note": "mendarat pusing di lantai; PUTAR BALIK"},
+  {"id": "Sh7", "size": "medium", "set": "stairwell", "key": 24, "note": "ia melangkah lebar melewati kucing dengan mulus"},
+  {"id": "Sh8", "size": "over the shoulder", "set": "classroom", "key": 28, "note": "salah jawab kuis, sekelas tertawa; PUTAR BALIK"},
+  {"id": "Sh9", "size": "extreme close-up", "set": "classroom", "key": 19, "note": "jawaban tepat, memakai kacamata hitam"},
+  {"id": "Sh10", "size": "title, wide", "set": "rooftop", "key": 48, "note": "matahari berputar sebagai jam"},
+  {"id": "Sh11", "size": "low angle, medium", "set": "rooftop", "key": 14, "note": "kedengarannya luar biasa"},
+  {"id": "Sh12", "size": "low angle, slow push in", "set": "rooftop", "key": 45, "note": "the turn: matahari retak dan lampu kota padam"}
+ ],
+ "edit": [
+  {"shot": "Sh1", "at": "kopi"},
+  {"shot": "Sh2", "at": "tumpah"},
+  {"shot": "Sh3", "at": "meja"},
+  {"shot": "Sh3", "at": "putar", "reverse": true, "look": "rewind"},
+  {"shot": "Sh2", "at": "balik", "reverse": true, "to": 3, "look": "rewind"},
+  {"shot": "Sh4", "at": "tangkap"},
+  {"shot": "Sh5", "at": "langkah"},
+  {"shot": "Sh6", "at": "tangga"},
+  {"shot": "Sh6", "at": "putar", "reverse": true, "look": "rewind"},
+  {"shot": "Sh5", "at": "balik", "reverse": true, "to": 9, "look": "rewind"},
+  {"shot": "Sh7", "at": "kucingmu"},
+  {"shot": "Sh8", "at": "jawab"},
+  {"shot": "Sh8", "at": "putar", "reverse": true, "from": 52, "to": 3, "look": "rewind"},
+  {"shot": "Sh9", "at": "sekarang"},
+  {"shot": "Sh10", "at": "gimana"},
+  {"shot": "Sh11", "at": "kedengarannya"},
+  {"shot": "Sh12", "at": "tapi"}
+ ],
+ "fx": [
+  {"at": "meja", "kind": "flash", "color": "#FFFFFF"},
+  {"at": "tangga", "kind": "flash", "color": "#FFFFFF"},
+  {"at": "gimana", "kind": "flash", "color": "#FFF3DC"},
+  {"at": "tapi+18", "kind": "flash", "color": "#FF3344"},
+  {"at": "meja", "kind": "shake", "len": 8, "amp": 14},
+  {"at": "tangga", "kind": "shake", "len": 8, "amp": 12}
+ ],
+ "sound": {
+  "clips": {
+   "clink": ["a ceramic coffee mug knocked by a hand on a wooden desk, short clink and scrape", 0.7],
+   "fall_whoosh": ["a small object falling fast through the air, short soft whoosh", 0.6],
+   "shatter": ["a ceramic coffee mug smashing on a wooden floor, shards scattering and liquid splash", 1.3],
+   "rewind": ["a VHS tape rewinding fast, high whirring tape squeal with mechanical hum", 1.6],
+   "catch": ["a hand catching a ceramic mug mid-air, soft slap and thud", 0.5],
+   "sparkle": ["a short bright magical sparkle twinkle, cartoon", 0.8],
+   "step": ["a single sneaker footstep on a wooden stair, close", 0.5],
+   "cat_yowl": ["an angry cat yowl and hiss, short and startled", 0.9],
+   "tumble": ["a cartoon character tumbling down wooden stairs, a quick series of bumps and thuds", 1.3],
+   "land": ["a heavy body landing flat on a wooden floor, cartoon thud", 0.6],
+   "dizzy": ["cartoon dizzy birds tweeting in a circle after a bonk", 1.4],
+   "big_step": ["a cartoon exaggerated careful tiptoe step, light airy whoosh", 0.7],
+   "cat_chirp": ["a cat making a short curious chirp meow", 0.6],
+   "pop": ["a cartoon speech bubble pop, short and bright", 0.5],
+   "buzzer": ["a game show wrong answer buzzer, short", 0.8],
+   "laugh": ["a small classroom of kids bursting out laughing", 1.6],
+   "ding": ["a correct answer ding, bright bell chime", 0.8],
+   "shades": ["cool sunglasses sliding on with a swoosh and a bright metallic glint", 0.9],
+   "title_boom": ["a cinematic whoosh rising into a deep boom impact", 1.6],
+   "clock_back": ["a clock ticking very fast then spinning backwards, mechanical ratchet whirr", 1.6],
+   "drone_hit": ["a dark ominous low drone hit, deep cinematic horror sting", 2.6],
+   "crack": ["glass cracking sharply, the crack spreading across a pane", 1.1],
+   "bulb_pop": ["a small light bulb popping out, a tiny glass tink and fizz", 0.5],
+   "rewind_start": ["a quick reverse swoosh, like a sound being sucked backwards", 0.7],
+   "room_tone": ["quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5],
+   "class_murmur": ["a quiet classroom murmur, kids whispering, chairs shuffling", 2.0],
+   "roof_wind": ["a gentle evening breeze on a city rooftop, distant traffic", 7.0],
+   "music": ["playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0]
+  },
+  "events": [
+   ["kopi", "room_tone", 0.1, "onset", "gimana"],
+   ["kopi+5", "clink", 0.3],
+   ["tumpah", "fall_whoosh", 0.3, "peak"],
+   ["meja", "shatter", 0.95, "onset", "meja+8"],
+   ["meja+4", "rewind_start", 0.5, "peak"],
+   ["putar", "rewind", 0.55, "onset", "tangkap"],
+   ["tangkap", "catch", 0.6],
+   ["tangkap+8", "sparkle", 0.35],
+   ["langkah", "step", 0.35],
+   ["langkah+10", "cat_yowl", 0.6, "onset", "tangga+10"],
+   ["tangga", "land", 0.9, "onset", "tangga+12"],
+   ["tangga+4", "dizzy", 0.4, "onset", "tangga+15"],
+   ["putar#2", "rewind", 0.55, "onset", "kucingmu"],
+   ["kucingmu", "big_step", 0.4],
+   ["kucingmu+8", "cat_chirp", 0.45],
+   ["jawab", "class_murmur", 0.16, "onset", "jawab+20"],
+   ["jawab+8", "buzzer", 0.55],
+   ["jawab+12", "laugh", 0.5, "onset", "putar#3"],
+   ["putar#3", "rewind", 0.55, "onset", "sekarang"],
+   ["sekarang", "ding", 0.5],
+   ["sekarang+4", "shades", 0.45],
+   ["sekarang+8", "sparkle", 0.4],
+   ["gimana", "title_boom", 0.75, "peak"],
+   ["gimana", "roof_wind", 0.18, "onset"],
+   ["gimana+20", "clock_back", 0.45, "onset"],
+   ["kedengarannya", "sparkle", 0.35],
+   ["tapi", "drone_hit", 0.8],
+   ["tapi+18", "crack", 0.8]
+  ],
+  "repeats": [
+   {"at": "tapi+20", "clip": "bulb_pop", "n": 15, "every": 2, "gain": [0.16, 0.28], "pitch": [0.85, 1.18]}
+  ],
+  "music": {"clip": "music", "reverse_looks": ["rewind"], "until": "tapi"},
+  "levels": {"sfx_lu": 1.9, "music_lu": -9.4}
+ }
+}

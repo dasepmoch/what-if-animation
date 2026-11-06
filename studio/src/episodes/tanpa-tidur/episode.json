@@ -1,0 +1,169 @@
+{
+ "id": "TanpaTidur",
+ "slug": "tanpa-tidur",
+ "topic": "Gimana kalau kamu gak pernah butuh tidur lagi?",
+ "title": [
+  "GIMANA KALAU KAMU GAK",
+  "PERNAH BUTUH TIDUR?"
+ ],
+ "accent": "TIDUR",
+ "voice": {
+  "provider": "omnivoice",
+  "language": "Indonesian",
+  "speed": 1.0,
+  "num_step": 32,
+  "instruct": "male, young adult, moderate pitch"
+ },
+ "script": [
+  {
+   "beat": "1 cold open: demo 1 (selfish / gaming)",
+   "text": "Jam tiga pagi. Kamu masih terjaga menatap layar. Segar bugar."
+  },
+  {
+   "beat": "1 cold open: demo 2 (useful / studying)",
+   "text": "Jam lima subuh. Kamu belajar lima bab buku tebal. Paham semuanya."
+  },
+  {
+   "beat": "1 cold open: demo 3 (uncanny / sleeping world)",
+   "text": "Jam enam pagi. Kamu menatap sekeliling. Seluruh kota masih terlelap seperti orang mati."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "Gimana kalau kamu gak pernah butuh tidur lagi seumur hidupmu?"
+  },
+  {
+   "beat": "3 the fun part: super productivity",
+   "text": "Kamu punya delapan jam ekstra setiap hari. Sepertiga hidup manusia yang terbuang sia-sia sekarang milikmu seutuhnya. Kamu kuasai tiga bahasa baru, selesaikan ratusan proyek, dan gak pernah merasa lelah."
+  },
+  {
+   "beat": "4 the turn: the cost (real science)",
+   "text": "Tapi tubuh manusia punya aturan mutlak: saat tidur, sistem glimfatik otak bekerja menyusutkan sel sebesar enam puluh persen untuk membersihkan racun beta amiloid. Tanpa tidur, limbah beracun itu mengendap di miliaran neuron otakmu. Itu nyata."
+  },
+  {
+   "beat": "5 someone powerful notices: man in suit",
+   "text": "Di minggu keempat, halusinasi mulai merayap. Dan di seberang jalan, ada mobil hitam dengan pria berjas yang mencatat setiap detikmu."
+  },
+  {
+   "beat": "6 family in danger: little sister",
+   "text": "Adikmu melihatmu berdiri di sudut gelap kamar tanpa pernah berkedip."
+  },
+  {
+   "beat": "7 cliffhanger",
+   "text": "Jadi... berapa lama otakmu bisa bertahan sebelum meledak?"
+  }
+ ],
+ "science": [
+  {
+   "claim": "Saat tidur, sistem glimfatik otak menyusutkan sel sebesar 60% untuk menyapu racun beta-amiloid.",
+   "working": "Penelitian Dr. Maiken Nedergaard (Science 2013): Sel interstitial menyusut 60% saat tidur non-REM, memungkinkan cairan serebrospinal (CSF) mengalir deras untuk membilas racun metabolik beta-amiloid dan tau. Tanpa tidur, akumulasi racun ini merusak sinapsis dan neuron secara permanen.",
+   "source": "Nedergaard et al., Science (2013), 'Sleep Drives Metabolite Clearance from the Adult Brain'"
+  }
+ ],
+ "gaps": {
+  "word": 0.12,
+  "comma": 0.2,
+  "sentence": 0.28,
+  "question": 0.4
+ },
+ "cast": ["pipHood", "sis", "suit"],
+ "shots": [
+  {"id": "S1", "size": "medium", "set": "bedroom", "key": 20, "note": "Pip di kamar jam 3 pagi"},
+  {"id": "S2", "size": "close-up, screen glow", "set": "study", "key": 15, "note": "Menatap layar laptop bercahaya"},
+  {"id": "S3", "size": "close-up", "set": "bedroom", "key": 15, "note": "Pip segar bugar tersenyum"},
+  {"id": "S4", "size": "wide", "set": "study", "key": 20, "note": "Jam 5 subuh di meja belajar"},
+  {"id": "S5", "size": "macro insert, top-down", "set": "study", "key": 18, "note": "Membaca lima bab buku tebal"},
+  {"id": "S6", "size": "medium", "set": "study", "key": 15, "note": "Pip menutup buku dengan puas"},
+  {"id": "S7", "size": "wide", "set": "bedroom", "key": 20, "note": "Jam 6 pagi menatap luar jendela"},
+  {"id": "S8", "size": "extreme wide, night sky", "set": "bedroom", "key": 25, "note": "Seluruh kota terlelap sunyi"},
+  {"id": "S9", "size": "title, wide", "set": "rooftop", "key": 45, "note": "Title card di atas atap kota subuh"},
+  {"id": "S10", "size": "medium", "set": "study", "key": 20, "note": "8 jam ekstra, jam berputar cepat"},
+  {"id": "S11", "size": "schematic", "set": "schematic", "key": 25, "note": "Diagram sepertiga waktu hidup manusia"},
+  {"id": "S12", "size": "close-up", "set": "study", "key": 20, "note": "Waktu sekarang milikmu seutuhnya"},
+  {"id": "S13", "size": "medium wide", "set": "study", "key": 25, "note": "Menguasai 3 bahasa baru"},
+  {"id": "S14", "size": "macro insert", "set": "study", "key": 20, "note": "Ratusan proyek selesai tanpa lelah"},
+  {"id": "S15", "size": "close-up, low angle", "set": "study", "key": 20, "note": "The Turn: lampu berkedip, bayangan merah"},
+  {"id": "S16", "size": "medium, dramatic", "set": "bedroom", "key": 20, "note": "Aturan mutlak tubuh manusia"},
+  {"id": "S17", "size": "schematic", "set": "schematic", "key": 30, "note": "Sistem glimfatik otak bekerja"},
+  {"id": "S18", "size": "macro insert", "set": "schematic", "key": 25, "note": "Sel menyusut 60 persen membilas racun"},
+  {"id": "S19", "size": "macro insert", "set": "schematic", "key": 25, "note": "Limbah racun beta-amiloid menumpuk"},
+  {"id": "S20", "size": "extreme close-up", "set": "study", "key": 18, "note": "Pip menatap tajam: Itu nyata."},
+  {"id": "S21", "size": "wide, dark", "set": "bedroom", "key": 25, "note": "Halusinasi bayangan merayap di dinding"},
+  {"id": "S22", "size": "over the shoulder, window", "set": "study", "key": 20, "note": "Melihat ke bawah ke seberang jalan"},
+  {"id": "S23", "size": "medium, street", "set": "study", "key": 25, "note": "Mobil hitam dan pria berjas mencatat"},
+  {"id": "S24", "size": "medium, doorway", "set": "bedroom", "key": 25, "note": "Adik perempuan kaget menatap dari pintu"},
+  {"id": "S25", "size": "wide, dark corner", "set": "bedroom", "key": 25, "note": "Pip berdiri mematung di sudut gelap"},
+  {"id": "S26", "size": "extreme close-up, push in", "set": "study", "key": 35, "note": "Mata terbuka lebar tak berkedip, cliffhanger"}
+ ],
+ "edit": [
+  {"shot": "S1", "at": "Jam"},
+  {"shot": "S2", "at": "menatap"},
+  {"shot": "S3", "at": "Segar"},
+  {"shot": "S4", "at": "lima"},
+  {"shot": "S5", "at": "buku"},
+  {"shot": "S6", "at": "Paham"},
+  {"shot": "S7", "at": "enam"},
+  {"shot": "S8", "at": "sekeliling"},
+  {"shot": "S9", "at": "Gimana"},
+  {"shot": "S10", "at": "delapan"},
+  {"shot": "S11", "at": "Sepertiga"},
+  {"shot": "S12", "at": "sekarang"},
+  {"shot": "S13", "at": "kuasai"},
+  {"shot": "S14", "at": "ratusan"},
+  {"shot": "S15", "at": "Tapi"},
+  {"shot": "S16", "at": "aturan"},
+  {"shot": "S17", "at": "glimfatik"},
+  {"shot": "S18", "at": "enam"},
+  {"shot": "S19", "at": "limbah"},
+  {"shot": "S20", "at": "nyata"},
+  {"shot": "S21", "at": "halusinasi"},
+  {"shot": "S22", "at": "seberang"},
+  {"shot": "S23", "at": "mobil"},
+  {"shot": "S24", "at": "Adikmu"},
+  {"shot": "S25", "at": "kamar"},
+  {"shot": "S26", "at": "berapa"}
+ ],
+ "fx": [
+  {"at": "Gimana", "kind": "flash", "color": "#FFF3DC"},
+  {"at": "Tapi", "kind": "flash", "color": "#FF3344"},
+  {"at": "Tapi", "kind": "shake", "len": 12, "amp": 14},
+  {"at": "berapa", "kind": "flash", "color": "#FF2233"}
+ ],
+ "sound": {
+  "clips": {
+   "room_tone": ["quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5],
+   "clock_back": ["a clock ticking very fast then spinning backwards, mechanical ratchet whirr", 1.6],
+   "bulb_pop": ["a small light bulb popping out, a tiny glass tink and fizz", 0.5],
+   "drone_hit": ["a dark ominous low drone hit, deep cinematic horror sting", 2.6],
+   "crack": ["glass cracking sharply, the crack spreading across a pane", 1.1],
+   "sparkle": ["a short bright magical sparkle twinkle, cartoon", 0.8],
+   "step": ["a single sneaker footstep on a wooden stair, close", 0.5],
+   "ding": ["a correct answer ding, bright bell chime", 0.8],
+   "pop": ["a cartoon speech bubble pop, short and bright", 0.5],
+   "title_boom": ["a cinematic whoosh rising into a deep boom impact", 1.6],
+   "roof_wind": ["a gentle evening breeze on a city rooftop, distant traffic", 7.0],
+   "music": ["playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0]
+  },
+  "events": [
+   ["Jam", "room_tone", 0.12, "onset", "Gimana"],
+   ["Segar", "sparkle", 0.3],
+   ["lima", "pop", 0.4],
+   ["Paham", "ding", 0.45],
+   ["Gimana", "title_boom", 0.75, "peak"],
+   ["Gimana", "roof_wind", 0.15, "onset", "Tapi"],
+   ["delapan", "clock_back", 0.4, "onset", "Sepertiga"],
+   ["kuasai", "sparkle", 0.35],
+   ["Tapi", "drone_hit", 0.85],
+   ["Tapi+6", "crack", 0.7],
+   ["limbah", "bulb_pop", 0.3],
+   ["nyata", "pop", 0.4],
+   ["halusinasi", "drone_hit", 0.6],
+   ["Adikmu", "step", 0.35],
+   ["berapa", "crack", 0.8]
+  ],
+  "repeats": [
+   {"at": "limbah", "clip": "bulb_pop", "n": 10, "every": 3, "gain": [0.15, 0.25], "pitch": [0.8, 1.2]}
+  ],
+  "music": {"clip": "music", "from": "delapan", "until": "Tapi"},
+  "levels": {"sfx_lu": 1.5, "music_lu": -9.5}
+ }
+}

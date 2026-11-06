@@ -1,0 +1,301 @@
+{
+ "slug": "putar-balik",
+ "title": "GIMANA KALAU KAMU BISA PUTAR BALIK 10 DETIK?",
+ "fps": 30,
+ "total": 562,
+ "segments": [
+  {
+   "shot": "Sh1",
+   "a": 0,
+   "b": 12,
+   "t0": 0,
+   "t1": 12,
+   "line": "Kopi"
+  },
+  {
+   "shot": "Sh2",
+   "a": 12,
+   "b": 26,
+   "t0": 0,
+   "t1": 14,
+   "line": "tumpah"
+  },
+  {
+   "shot": "Sh3",
+   "a": 26,
+   "b": 47,
+   "t0": 0,
+   "t1": 21,
+   "line": "dari meja."
+  },
+  {
+   "shot": "Sh3",
+   "a": 47,
+   "b": 58,
+   "t0": 21,
+   "t1": 0,
+   "line": "Putar",
+   "look": "rewind"
+  },
+  {
+   "shot": "Sh2",
+   "a": 58,
+   "b": 101,
+   "t0": 14,
+   "t1": 3,
+   "line": "balik. Kamu",
+   "look": "rewind"
+  },
+  {
+   "shot": "Sh4",
+   "a": 101,
+   "b": 128,
+   "t0": 0,
+   "t1": 27,
+   "line": "tangkap. Salah"
+  },
+  {
+   "shot": "Sh5",
+   "a": 128,
+   "b": 140,
+   "t0": 0,
+   "t1": 12,
+   "line": "langkah"
+  },
+  {
+   "shot": "Sh6",
+   "a": 140,
+   "b": 154,
+   "t0": 0,
+   "t1": 14,
+   "line": "di tangga."
+  },
+  {
+   "shot": "Sh6",
+   "a": 154,
+   "b": 162,
+   "t0": 14,
+   "t1": 0,
+   "line": "Putar",
+   "look": "rewind"
+  },
+  {
+   "shot": "Sh5",
+   "a": 162,
+   "b": 179,
+   "t0": 12,
+   "t1": 9,
+   "line": "balik.",
+   "look": "rewind"
+  },
+  {
+   "shot": "Sh7",
+   "a": 179,
+   "b": 223,
+   "t0": 0,
+   "t1": 44,
+   "line": "Kucingmu selamat. Salah"
+  },
+  {
+   "shot": "Sh8",
+   "a": 223,
+   "b": 246,
+   "t0": 0,
+   "t1": 23,
+   "line": "jawab di kelas?"
+  },
+  {
+   "shot": "Sh8",
+   "a": 246,
+   "b": 279,
+   "t0": 52,
+   "t1": 3,
+   "line": "Putar balik.",
+   "look": "rewind"
+  },
+  {
+   "shot": "Sh9",
+   "a": 279,
+   "b": 326,
+   "t0": 0,
+   "t1": 47,
+   "line": "Sekarang kamu jenius."
+  },
+  {
+   "shot": "Sh10",
+   "a": 326,
+   "b": 420,
+   "t0": 0,
+   "t1": 94,
+   "line": "Gimana kalau kamu bisa memutar balik sepuluh detik, kapan pun kamu mau?"
+  },
+  {
+   "shot": "Sh11",
+   "a": 420,
+   "b": 468,
+   "t0": 0,
+   "t1": 48,
+   "line": "Kedengarannya luar biasa."
+  },
+  {
+   "shot": "Sh12",
+   "a": 468,
+   "b": 562,
+   "t0": 0,
+   "t1": 94,
+   "line": "Tapi ini bakal menghancurkan hidupmu."
+  }
+ ],
+ "shots": [
+  {
+   "id": "Sh1",
+   "size": "wide",
+   "key": 14,
+   "len": 12,
+   "first": 0,
+   "line": "Kopi",
+   "note": "Pip di meja, cangkir kopi tersenggol"
+  },
+  {
+   "id": "Sh2",
+   "size": "macro insert, high angle",
+   "key": 8,
+   "len": 14,
+   "first": 12,
+   "line": "tumpah",
+   "note": "cangkir meluncur ke tepi meja"
+  },
+  {
+   "id": "Sh3",
+   "size": "floor insert",
+   "key": 5,
+   "len": 21,
+   "first": 26,
+   "line": "dari meja.",
+   "note": "cangkir pecah, kilatan putih; PUTAR BALIK memutar waktu mundur"
+  },
+  {
+   "id": "Sh4",
+   "size": "medium",
+   "key": 18,
+   "len": 27,
+   "first": 101,
+   "line": "tangkap. Salah",
+   "note": "ia berhasil menangkap cangkirnya"
+  },
+  {
+   "id": "Sh5",
+   "size": "wide, camera follows",
+   "key": 16,
+   "len": 12,
+   "first": 128,
+   "line": "langkah",
+   "note": "ia tersandung kucing di tangga"
+  },
+  {
+   "id": "Sh6",
+   "size": "top-down",
+   "key": 10,
+   "len": 14,
+   "first": 140,
+   "line": "di tangga.",
+   "note": "mendarat pusing di lantai; PUTAR BALIK"
+  },
+  {
+   "id": "Sh7",
+   "size": "medium",
+   "key": 24,
+   "len": 44,
+   "first": 179,
+   "line": "Kucingmu selamat. Salah",
+   "note": "ia melangkah lebar melewati kucing dengan mulus"
+  },
+  {
+   "id": "Sh8",
+   "size": "over the shoulder",
+   "key": 28,
+   "len": 52,
+   "first": 223,
+   "line": "jawab di kelas?",
+   "note": "salah jawab kuis, sekelas tertawa; PUTAR BALIK"
+  },
+  {
+   "id": "Sh9",
+   "size": "extreme close-up",
+   "key": 19,
+   "len": 47,
+   "first": 279,
+   "line": "Sekarang kamu jenius.",
+   "note": "jawaban tepat, memakai kacamata hitam"
+  },
+  {
+   "id": "Sh10",
+   "size": "title, wide",
+   "key": 48,
+   "len": 94,
+   "first": 326,
+   "line": "Gimana kalau kamu bisa memutar balik sepuluh detik, kapan pun kamu mau?",
+   "note": "matahari berputar sebagai jam"
+  },
+  {
+   "id": "Sh11",
+   "size": "low angle, medium",
+   "key": 14,
+   "len": 48,
+   "first": 420,
+   "line": "Kedengarannya luar biasa.",
+   "note": "kedengarannya luar biasa"
+  },
+  {
+   "id": "Sh12",
+   "size": "low angle, slow push in",
+   "key": 45,
+   "len": 94,
+   "first": 468,
+   "line": "Tapi ini bakal menghancurkan hidupmu.",
+   "note": "the turn: matahari retak dan lampu kota padam"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FFFFFF",
+   "f": 28
+  },
+  {
+   "kind": "flash",
+   "color": "#FFFFFF",
+   "f": 142
+  },
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 328
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "f": 488
+  },
+  {
+   "kind": "shake",
+   "len": 8,
+   "amp": 14,
+   "f": 28
+  },
+  {
+   "kind": "shake",
+   "len": 8,
+   "amp": 12,
+   "f": 142
+  }
+ ],
+ "audio": {
+  "voice": "putar-balik/voice.wav",
+  "sfx": "putar-balik/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.3964,
+  "music": "putar-balik/music.wav",
+  "musicVol": 0.0782
+ }
+}
