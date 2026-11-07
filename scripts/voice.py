@@ -151,7 +151,14 @@ def align_script_with_whisper(script_tokens, whisper_chunks, total_dur):
     return out
 
 
-if force or meta.get('sig') != sig or not raw_audio.exists() or not raw_words.exists():
+if provider == 'narrator':
+    # The fixed What If narrator (scripts/narrator.py) runs on the Mac and leaves voice_raw.wav + words_raw.json.
+    raw_audio = pub_dir(slug) / 'voice_raw.wav'
+    if not raw_audio.exists() or not raw_words.exists():
+        raise SystemExit('provider "narrator": run scripts/narrator.py on the Mac first, then put voice_raw.wav in '
+                         f'public/{slug}/ and words_raw.json in out/{slug}/.')
+    print('Narrator take found (scripts/narrator.py): tightening it.')
+elif force or meta.get('sig') != sig or not raw_audio.exists() or not raw_words.exists():
     t0 = time.time()
     if provider == 'elevenlabs':
         print(f'{len(text)} characters to ElevenLabs (voice {V["id"]})')

@@ -18,8 +18,10 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 | `references/kit.md` | The building blocks: engine, cast, sets, room kit, light, UI, looks, and how to add each |
 | `references/sound.md` | Writing sound events, prompts, levels, costs |
 | `references/traps.md` | Everything that cost time on the two example episodes |
+| `studio/src/episodes/gravitasi` | The portrait (9:16 Shorts) example with the locked narrator and animated captions |
 | `studio/` | The Remotion project: copy it once, then every episode lives in it |
-| `scripts/` | voice, plan, stills, board, sfx, mixcheck, motiongrid, master (Python 3.9+ and Node) |
+| `scripts/` | voice, narrator, subtitles, plan, stills, board, sfx, mixcheck, motiongrid, master (Python 3.9+ and Node) |
+| `scripts/cloud/` | Portrait-aware stills, render and contact-sheet helpers (Mac or cloud sandbox) |
 
 ## Rules
 
@@ -36,16 +38,19 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 
 ## Setup (once per machine)
 
-Needs Node 18+, ffmpeg and ffprobe on the PATH, Python 3.9+ with `numpy` and `Pillow`, and the local TTS engine (OmniVoice in `~/Documents/VIDEOS-PROJECT/TTS-ENGINE` or configured via `TTS_ENGINE_DIR`). ElevenLabs key is optional.
+Needs Node 18+, ffmpeg and ffprobe on the PATH, Python 3.9+ with `numpy` and `Pillow`, and the local TTS engine (OmniVoice in `~/Documents/claude/TTS-ENGINE`, or set `TTS_ENGINE_DIR`). ElevenLabs key is optional.
 
 ```bash
 cp -r <skill>/studio ./what-if-studio && cd what-if-studio && npm install
 ```
 
 Everything below runs from that studio folder; `<skill>` is this skill's folder. To work offline or in your own
-brand face, put a display font in `public/fonts/` and set `titleFont` in `src/studio.config.ts` (the default title
-face, Bricolage Grotesque, and the UI faces load from Google Fonts at render time). To update an existing studio to
-a newer engine, copy `<skill>/studio/src/engine` over its `src/engine`.
+brand face, put a display font in `public/fonts/` and set `titleFont` in `src/studio.config.ts`. The default faces
+(Bricolage Grotesque, Fragment Mono, Kalam) ship as local files in `public/fonts/`, so renders work offline. To update
+an existing studio to a newer engine, copy `<skill>/studio/src/engine` over its `src/engine` (and `public/fonts/`).
+
+**Format.** Portrait 9:16 (1080x1920) for Shorts is the default: `defineEpisode(id, { ..., size: PORTRAIT })` and
+`camV(cx, cy, zoom)` instead of `camT` (see `gravitasi`). Landscape 16:9 only when asked.
 
 ## The pipeline
 
@@ -59,13 +64,39 @@ demos and the turn (one real fact with a number). Write `src/episodes/<slug>/epi
 the composition name), `slug`, `topic`, `title` (two lines), `script` (one entry per beat) and `science` (each fact:
 the claim, the working, the source). 120 to 160 words for a standard ~1 minute (50-60 s) episode (or 45 to 65 words for a quick 15-25 s teaser). Read it aloud at pace: every line must be a picture.
 
-### 2. Voice (The Golden TTS Standard)
+### 2. Voice: the locked narrator `whatif-narator-v1` (default)
+
+Every episode uses the same narrator, and it must sound identical each time. `scripts/narrator.py` does that: one
+anchor voice designed once and saved as a clone prompt in `TTS-ENGINE/refs/whatif-narator.{wav,txt,pt,json}`, and
+every episode **clones** it (OmniVoice's instruct-only voice drifts between calls). Each beat is generated with fixed
+seeds (`1000 + 17*beat + take`, 2 takes), num_step 32, guidance 2.0, t_shift 0.1, speed 1.05; Whisper keeps the
+take with the lowest character error rate; beats are trimmed, levelled to -20 dB RMS and joined with 0.42 s gaps
+(0.5 s after a question).
+
+```bash
+cd ~/Documents/claude/TTS-ENGINE && mkdir -p <studio>/out/<slug>/voice && \
+  .venv/bin/python <skill>/scripts/narrator.py <studio>/src/episodes/<slug>/episode.json <studio>/out/<slug>/voice
+```
+
+**The lock.** Models load from pinned local snapshots (OmniVoice `c5fdb5cc...`, Whisper large-v3-turbo `41f01f3f...`)
+with `HF_HUB_OFFLINE=1`. The first anchor run writes `refs/whatif-narator.lock.json` (recipe fingerprint, sha256 of
+the anchor files, model snapshots); every later run checks it and stops with `NARRATOR LOCK FAILED` if anything
+differs. Never edit `RECIPE`, never delete the lock, don't `git pull`/`uv sync` the TTS engine mid-series. Only
+`--new-anchor` makes a new narrator (it archives the old refs), and only when the person asks for a new voice. The
+first time, play `refs/whatif-narator.wav` to the person before voicing anything. Same text + same seed gives
+bit-identical audio on the same Mac (verified on MPS, fp16, torch 2.8.0).
+
+Then: any beat with CER > 0.1 in `narrator_report.json` → re-run with `--beats N --takes 4`. Copy `voice_raw.wav` to
+`public/<slug>/`, `words_raw.json` + `narrator_report.json` to `out/<slug>/`, set `"voice": {"provider": "narrator"}`
+and run `python <skill>/scripts/voice.py <slug>` (it only tightens the pauses and writes `words.json`).
+
+#### Alternative: one-shot OmniVoice / ElevenLabs (The Golden TTS Standard)
 
 ```bash
 python <skill>/scripts/voice.py <slug>
 ```
 
-Synthesizes the episode's voice using the local **OmniVoice** engine (`~/Documents/VIDEOS-PROJECT/TTS-ENGINE`), running on Apple Silicon GPU (`mps`, `float16`) with word timestamps aligned via Whisper (`openai/whisper-large-v3-turbo`).
+Synthesizes the episode's voice using the local **OmniVoice** engine (`~/Documents/claude/TTS-ENGINE`), running on Apple Silicon GPU (`mps`, `float16`) with word timestamps aligned via Whisper (`openai/whisper-large-v3-turbo`).
 
 #### 🏆 Golden Standard Configuration (The `putar-balik` Rule)
 To achieve the crisp, punchy, energetic cadence seen in the gold-standard proof episode:
@@ -158,6 +189,20 @@ node <skill>/scripts/stills.mjs <slug> --frames 120 240
 Read the grids like a flipbook against the motion checklist in `references/look.md`; fix and re-render until it
 reads.
 
+**Animated captions.** Every episode gets burned-in Shorts captions from `words.json` (`studio/src/engine/captions.tsx`):
+
+```tsx
+import words from './words.json';
+const TITLE_FRAMES = (timeline as Timeline).segments.filter((s) => s.shot === 'S12').map((s) => [s.a, s.b] as [number, number]);
+export const ep = defineEpisode('Id', { timeline: timeline as Timeline, shots, size: PORTRAIT,
+  captions: { words: words as Word[], hide: TITLE_FRAMES, accent: ['nyata'] } });
+```
+
+Chunks of max 3 words / 16 letters (broken at punctuation and pauses > 0.28 s) pop in with a spring; the spoken word
+turns yellow, grows and lifts; words still to come wait dimmed; digits, Indonesian number words and the `accent`
+list are red. Default height `y: 0.64` of the frame (clear of the Shorts UI in the bottom 20% and the title/readouts
+up top). Hide them over the title card; move them for the whole episode with `style: { y }` if a prop sits behind.
+
 ### 7. Sound
 
 Read `references/sound.md`. Add `sound` to `episode.json`: the clips (prompt and length), one event per visible
@@ -187,7 +232,13 @@ python <skill>/scripts/master.py <slug>
 ```
 
 Renders, brings the mix to -14 LUFS with peaks under -1 dBTP, and writes `out/<slug>/report.json` (length, loudness,
-pace, credits). Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final.mp4` and
+pace, credits). Export the subtitles for the upload, chunked exactly like the burned-in captions:
+
+```bash
+python <skill>/scripts/subtitles.py src/episodes/<slug>/words.json out/<slug>/<slug>.srt
+```
+
+Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final.mp4`, `out/<slug>/<slug>.srt` and
 `out/<slug>/storyboard.jpg`, with the length, credits used (0 for local OmniVoice), and anything you'd still improve.
 
 ## Where an episode lives
@@ -198,5 +249,7 @@ pace, credits). Watch the final file once through with sound. Hand over `out/<sl
 | `src/episodes/<slug>/shots.tsx`, `index.tsx` | The drawing: one component per shot, the power's look |
 | `src/episodes/<slug>/words.json`, `timeline.json` | Written by voice.py and plan.py (sfx.py adds the volumes) |
 | `public/<slug>/` | voice.wav, sfx.wav, music.wav |
+| `out/<slug>/voice/` | narrator.py's takes, narrator.log, narrator_report.json |
+| `TTS-ENGINE/refs/whatif-narator.*` | The locked narrator: anchor wav/txt/pt, recipe json, lock.json (never delete) |
 | `out/<slug>/` | board stills, storyboard.jpg, shotlist.md, motion grids, renders, costs.json, report.json |
 | `library/sfx/` | Every generated sound clip, shared by all episodes |

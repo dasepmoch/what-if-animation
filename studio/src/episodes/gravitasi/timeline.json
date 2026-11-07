@@ -1,0 +1,867 @@
+{
+ "slug": "gravitasi",
+ "title": "GIMANA KALAU GRAVITASIMU CUMA 10%?",
+ "fps": 30,
+ "total": 2628,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 62,
+   "t0": 0,
+   "t1": 62,
+   "line": "Toples kue di rak paling atas."
+  },
+  {
+   "shot": "S2",
+   "a": 62,
+   "b": 80,
+   "t0": 0,
+   "t1": 18,
+   "line": "Lompat.",
+   "look": "g10"
+  },
+  {
+   "shot": "S3",
+   "a": 80,
+   "b": 104,
+   "t0": 0,
+   "t1": 24,
+   "line": "Dapat."
+  },
+  {
+   "shot": "S4",
+   "a": 104,
+   "b": 143,
+   "t0": 0,
+   "t1": 39,
+   "line": "Telat masuk kelas."
+  },
+  {
+   "shot": "S5",
+   "a": 143,
+   "b": 182,
+   "t0": 0,
+   "t1": 39,
+   "line": "Tangga dua lantai."
+  },
+  {
+   "shot": "S6",
+   "a": 182,
+   "b": 199,
+   "t0": 0,
+   "t1": 17,
+   "line": "Lompat.",
+   "look": "g10"
+  },
+  {
+   "shot": "S7",
+   "a": 199,
+   "b": 217,
+   "t0": 0,
+   "t1": 18,
+   "line": "Lompat.",
+   "look": "g10"
+  },
+  {
+   "shot": "S8",
+   "a": 217,
+   "b": 255,
+   "t0": 0,
+   "t1": 38,
+   "line": "Sampai duluan."
+  },
+  {
+   "shot": "S9",
+   "a": 255,
+   "b": 287,
+   "t0": 0,
+   "t1": 32,
+   "line": "Atap ke atap."
+  },
+  {
+   "shot": "S10",
+   "a": 287,
+   "b": 305,
+   "t0": 0,
+   "t1": 18,
+   "line": "Lompat.",
+   "look": "g10"
+  },
+  {
+   "shot": "S11",
+   "a": 305,
+   "b": 368,
+   "t0": 0,
+   "t1": 63,
+   "line": "Tapi kamu nggak turun-turun."
+  },
+  {
+   "shot": "S12",
+   "a": 368,
+   "b": 454,
+   "t0": 0,
+   "t1": 86,
+   "line": "Gimana kalau gravitasimu tinggal sepuluh persen?"
+  },
+  {
+   "shot": "S13",
+   "a": 454,
+   "b": 527,
+   "t0": 0,
+   "t1": 73,
+   "line": "Cuma kamu. Dunia tetap normal."
+  },
+  {
+   "shot": "S14",
+   "a": 527,
+   "b": 588,
+   "t0": 0,
+   "t1": 61,
+   "line": "Berat badanmu lima puluh kilo."
+  },
+  {
+   "shot": "S15",
+   "a": 588,
+   "b": 640,
+   "t0": 0,
+   "t1": 52,
+   "line": "Sekarang terasa cuma lima."
+  },
+  {
+   "shot": "S16",
+   "a": 640,
+   "b": 697,
+   "t0": 0,
+   "t1": 57,
+   "line": "Lompatan biasa setengah meter."
+  },
+  {
+   "shot": "S16B",
+   "a": 697,
+   "b": 738,
+   "t0": 0,
+   "t1": 41,
+   "line": "Sekarang lima meter.",
+   "look": "g10"
+  },
+  {
+   "shot": "S17",
+   "a": 738,
+   "b": 798,
+   "t0": 0,
+   "t1": 60,
+   "line": "Enam detik melayang di udara."
+  },
+  {
+   "shot": "S18",
+   "a": 798,
+   "b": 834,
+   "t0": 0,
+   "t1": 36,
+   "line": "Pelajaran olahraga?"
+  },
+  {
+   "shot": "S19",
+   "a": 834,
+   "b": 871,
+   "t0": 0,
+   "t1": 37,
+   "line": "Kamu juara kelas."
+  },
+  {
+   "shot": "S20",
+   "a": 871,
+   "b": 923,
+   "t0": 0,
+   "t1": 52,
+   "line": "Temanmu cuma bisa melongo."
+  },
+  {
+   "shot": "S21",
+   "a": 923,
+   "b": 948,
+   "t0": 0,
+   "t1": 25,
+   "line": "Mau tidur?"
+  },
+  {
+   "shot": "S22",
+   "a": 948,
+   "b": 1017,
+   "t0": 0,
+   "t1": 69,
+   "line": "Kamu mengambang di atas kasur."
+  },
+  {
+   "shot": "S23",
+   "a": 1017,
+   "b": 1083,
+   "t0": 0,
+   "t1": 66,
+   "line": "Tapi tubuhmu punya aturan sendiri."
+  },
+  {
+   "shot": "S24",
+   "a": 1083,
+   "b": 1155,
+   "t0": 0,
+   "t1": 72,
+   "line": "Tulang cuma kuat kalau diberi beban."
+  },
+  {
+   "shot": "S25",
+   "a": 1155,
+   "b": 1311,
+   "t0": 0,
+   "t1": 156,
+   "line": "Astronaut di luar angkasa kehilangan satu sampai satu setengah persen kepadatan tulang."
+  },
+  {
+   "shot": "S26",
+   "a": 1311,
+   "b": 1340,
+   "t0": 0,
+   "t1": 29,
+   "line": "Setiap bulan."
+  },
+  {
+   "shot": "S27",
+   "a": 1340,
+   "b": 1365,
+   "t0": 0,
+   "t1": 25,
+   "line": "Itu nyata."
+  },
+  {
+   "shot": "S28",
+   "a": 1365,
+   "b": 1441,
+   "t0": 0,
+   "t1": 76,
+   "line": "Dan bebanmu sekarang tinggal sepersepuluh."
+  },
+  {
+   "shot": "S29",
+   "a": 1441,
+   "b": 1515,
+   "t0": 0,
+   "t1": 74,
+   "line": "Tubuhmu nggak tahu ini kekuatan super."
+  },
+  {
+   "shot": "S30",
+   "a": 1515,
+   "b": 1586,
+   "t0": 0,
+   "t1": 71,
+   "line": "Yang dia tahu, bebannya hilang."
+  },
+  {
+   "shot": "S31",
+   "a": 1586,
+   "b": 1616,
+   "t0": 0,
+   "t1": 30,
+   "line": "Minggu ketiga."
+  },
+  {
+   "shot": "S32",
+   "a": 1616,
+   "b": 1650,
+   "t0": 0,
+   "t1": 34,
+   "line": "Pendaratan biasa."
+  },
+  {
+   "shot": "S33",
+   "a": 1650,
+   "b": 1665,
+   "t0": 0,
+   "t1": 15,
+   "line": "Krek."
+  },
+  {
+   "shot": "S34",
+   "a": 1665,
+   "b": 1727,
+   "t0": 0,
+   "t1": 62,
+   "line": "Bukan lantainya yang retak."
+  },
+  {
+   "shot": "S35",
+   "a": 1727,
+   "b": 1786,
+   "t0": 0,
+   "t1": 59,
+   "line": "Temanmu merekam satu lompatanmu."
+  },
+  {
+   "shot": "S36",
+   "a": 1786,
+   "b": 1853,
+   "t0": 0,
+   "t1": 67,
+   "line": "Ditonton sejuta kali dalam semalam."
+  },
+  {
+   "shot": "S37",
+   "a": 1853,
+   "b": 1920,
+   "t0": 0,
+   "t1": 67,
+   "line": "Besoknya, ada yang mengetuk pintu."
+  },
+  {
+   "shot": "S38",
+   "a": 1920,
+   "b": 1948,
+   "t0": 0,
+   "t1": 28,
+   "line": "Pria berjas."
+  },
+  {
+   "shot": "S39",
+   "a": 1948,
+   "b": 2030,
+   "t0": 0,
+   "t1": 82,
+   "line": "Dia tahu namamu. Dia tahu angkamu. Dia"
+  },
+  {
+   "shot": "S40",
+   "a": 2030,
+   "b": 2145,
+   "t0": 0,
+   "t1": 115,
+   "line": "nggak datang untuk menolong. Dia datang untuk mengukur."
+  },
+  {
+   "shot": "S41",
+   "a": 2145,
+   "b": 2210,
+   "t0": 0,
+   "t1": 65,
+   "line": "Sore itu, adikmu ikut ke atap."
+  },
+  {
+   "shot": "S42",
+   "a": 2210,
+   "b": 2254,
+   "t0": 0,
+   "t1": 44,
+   "line": "Angin bertiup kencang."
+  },
+  {
+   "shot": "S43",
+   "a": 2254,
+   "b": 2310,
+   "t0": 0,
+   "t1": 56,
+   "line": "Kakimu terangkat dari lantai."
+  },
+  {
+   "shot": "S44",
+   "a": 2310,
+   "b": 2386,
+   "t0": 0,
+   "t1": 76,
+   "line": "Cuma tangan kecilnya yang menahanmu."
+  },
+  {
+   "shot": "S45",
+   "a": 2386,
+   "b": 2474,
+   "t0": 0,
+   "t1": 88,
+   "line": "Lalu angka itu turun lagi. Sembilan persen."
+  },
+  {
+   "shot": "S46",
+   "a": 2474,
+   "b": 2493,
+   "t0": 0,
+   "t1": 19,
+   "line": "Delapan."
+  },
+  {
+   "shot": "S47",
+   "a": 2493,
+   "b": 2628,
+   "t0": 0,
+   "t1": 135,
+   "line": "Berapa lama sampai kamu nggak bisa turun lagi?"
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide, portrait",
+   "key": 14,
+   "len": 62,
+   "first": 0,
+   "line": "Toples kue di rak paling atas.",
+   "note": "Toples di rak paling atas, Pip berjinjit"
+  },
+  {
+   "id": "S2",
+   "size": "medium low, launch",
+   "key": 10,
+   "len": 18,
+   "first": 62,
+   "line": "Lompat.",
+   "note": "Jongkok lalu meluncur ke atas"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "key": 12,
+   "len": 24,
+   "first": 80,
+   "line": "Dapat.",
+   "note": "Melayang memeluk toples, smug"
+  },
+  {
+   "id": "S4",
+   "size": "medium",
+   "key": 16,
+   "len": 39,
+   "first": 104,
+   "line": "Telat masuk kelas.",
+   "note": "Lari ke kaki tangga, 06:59"
+  },
+  {
+   "id": "S5",
+   "size": "extreme wide, two floors",
+   "key": 14,
+   "len": 39,
+   "first": 143,
+   "line": "Tangga dua lantai.",
+   "note": "Tangga dua lantai menjulang"
+  },
+  {
+   "id": "S6",
+   "size": "wide tracking",
+   "key": 12,
+   "len": 17,
+   "first": 182,
+   "line": "Lompat.",
+   "note": "Lompatan 1 ke bordes"
+  },
+  {
+   "id": "S7",
+   "size": "low angle",
+   "key": 10,
+   "len": 18,
+   "first": 199,
+   "line": "Lompat.",
+   "note": "Lompatan 2 ke lantai atas"
+  },
+  {
+   "id": "S8",
+   "size": "medium",
+   "key": 12,
+   "len": 38,
+   "first": 217,
+   "line": "Sampai duluan.",
+   "note": "Mendarat di pintu kelas, kacamata"
+  },
+  {
+   "id": "S9",
+   "size": "wide",
+   "key": 14,
+   "len": 32,
+   "first": 255,
+   "line": "Atap ke atap.",
+   "note": "Lari di atap menuju celah"
+  },
+  {
+   "id": "S10",
+   "size": "extreme wide low",
+   "key": 12,
+   "len": 18,
+   "first": 287,
+   "line": "Lompat.",
+   "note": "Melompati gang, siluet matahari"
+  },
+  {
+   "id": "S11",
+   "size": "medium over the gap",
+   "key": 24,
+   "len": 63,
+   "first": 305,
+   "line": "Tapi kamu nggak turun-turun.",
+   "note": "Nggak turun-turun, 3 detik di udara"
+  },
+  {
+   "id": "S12",
+   "size": "title, wide",
+   "key": 40,
+   "len": 86,
+   "first": 368,
+   "line": "Gimana kalau gravitasimu tinggal sepuluh persen?",
+   "note": "Title card"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "key": 30,
+   "len": 73,
+   "first": 454,
+   "line": "Cuma kamu. Dunia tetap normal.",
+   "note": "Dunia 100%, kamu 10%"
+  },
+  {
+   "id": "S14",
+   "size": "macro insert, high",
+   "key": 14,
+   "len": 61,
+   "first": 527,
+   "line": "Berat badanmu lima puluh kilo.",
+   "note": "Timbangan 50.0"
+  },
+  {
+   "id": "S15",
+   "size": "medium",
+   "key": 24,
+   "len": 52,
+   "first": 588,
+   "line": "Sekarang terasa cuma lima.",
+   "note": "Angka jatuh ke 5.0, terangkat"
+  },
+  {
+   "id": "S16",
+   "size": "schematic",
+   "key": 20,
+   "len": 57,
+   "first": 640,
+   "line": "Lompatan biasa setengah meter.",
+   "note": "Lompatan biasa 0,5 m"
+  },
+  {
+   "id": "S16B",
+   "size": "schematic, tilt up",
+   "key": 40,
+   "len": 41,
+   "first": 697,
+   "line": "Sekarang lima meter.",
+   "note": "Sekarang 5 m"
+  },
+  {
+   "id": "S17",
+   "size": "wide sky",
+   "key": 30,
+   "len": 60,
+   "first": 738,
+   "line": "Enam detik melayang di udara.",
+   "note": "Rebahan di udara, 6.4 s"
+  },
+  {
+   "id": "S18",
+   "size": "wide",
+   "key": 18,
+   "len": 36,
+   "first": 798,
+   "line": "Pelajaran olahraga?",
+   "note": "Tangan menyentuh plafon"
+  },
+  {
+   "id": "S19",
+   "size": "medium",
+   "key": 14,
+   "len": 37,
+   "first": 834,
+   "line": "Kamu juara kelas.",
+   "note": "Medali, KAMU!"
+  },
+  {
+   "id": "S20",
+   "size": "close-up",
+   "key": 12,
+   "len": 52,
+   "first": 871,
+   "line": "Temanmu cuma bisa melongo.",
+   "note": "Mo melongo"
+  },
+  {
+   "id": "S21",
+   "size": "wide",
+   "key": 20,
+   "len": 25,
+   "first": 923,
+   "line": "Mau tidur?",
+   "note": "Tidur melayang di atas kasur"
+  },
+  {
+   "id": "S22",
+   "size": "close-up",
+   "key": 20,
+   "len": 69,
+   "first": 948,
+   "line": "Kamu mengambang di atas kasur.",
+   "note": "Tidur mengambang, Zzz"
+  },
+  {
+   "id": "S23",
+   "size": "medium low, red",
+   "key": 14,
+   "len": 66,
+   "first": 1017,
+   "line": "Tapi tubuhmu punya aturan sendiri.",
+   "note": "Lampu mati, mata terbuka"
+  },
+  {
+   "id": "S24",
+   "size": "schematic",
+   "key": 30,
+   "len": 72,
+   "first": 1083,
+   "line": "Tulang cuma kuat kalau diberi beban.",
+   "note": "Tulang + beban = kuat"
+  },
+  {
+   "id": "S25",
+   "size": "schematic",
+   "key": 60,
+   "len": 156,
+   "first": 1155,
+   "line": "Astronaut di luar angkasa kehilangan satu sampai satu setengah persen kepadatan tulang.",
+   "note": "Astronaut -1% s/d -1,5%"
+  },
+  {
+   "id": "S26",
+   "size": "schematic",
+   "key": 30,
+   "len": 29,
+   "first": 1311,
+   "line": "Setiap bulan.",
+   "note": "Batang per bulan"
+  },
+  {
+   "id": "S27",
+   "size": "close-up, red",
+   "key": 18,
+   "len": 25,
+   "first": 1340,
+   "line": "Itu nyata.",
+   "note": "Itu nyata, SUMBER: NASA"
+  },
+  {
+   "id": "S28",
+   "size": "schematic",
+   "key": 30,
+   "len": 76,
+   "first": 1365,
+   "line": "Dan bebanmu sekarang tinggal sepersepuluh.",
+   "note": "Beban 100% -> 10%"
+  },
+  {
+   "id": "S29",
+   "size": "schematic x-ray",
+   "key": 24,
+   "len": 74,
+   "first": 1441,
+   "line": "Tubuhmu nggak tahu ini kekuatan super.",
+   "note": "Rontgen tubuh"
+  },
+  {
+   "id": "S30",
+   "size": "macro schematic",
+   "key": 40,
+   "len": 71,
+   "first": 1515,
+   "line": "Yang dia tahu, bebannya hilang.",
+   "note": "Tulang berlubang"
+  },
+  {
+   "id": "S31",
+   "size": "insert",
+   "key": 12,
+   "len": 30,
+   "first": 1586,
+   "line": "Minggu ketiga.",
+   "note": "Kalender 21 hari"
+  },
+  {
+   "id": "S32",
+   "size": "medium",
+   "key": 14,
+   "len": 34,
+   "first": 1616,
+   "line": "Pendaratan biasa.",
+   "note": "Pendaratan biasa"
+  },
+  {
+   "id": "S33",
+   "size": "macro insert, x-ray",
+   "key": 8,
+   "len": 15,
+   "first": 1650,
+   "line": "Krek.",
+   "note": "Krek"
+  },
+  {
+   "id": "S34",
+   "size": "close-up low, red",
+   "key": 14,
+   "len": 62,
+   "first": 1665,
+   "line": "Bukan lantainya yang retak.",
+   "note": "Bukan lantainya"
+  },
+  {
+   "id": "S35",
+   "size": "medium",
+   "key": 20,
+   "len": 59,
+   "first": 1727,
+   "line": "Temanmu merekam satu lompatanmu.",
+   "note": "Mo merekam"
+  },
+  {
+   "id": "S36",
+   "size": "macro insert",
+   "key": 50,
+   "len": 67,
+   "first": 1786,
+   "line": "Ditonton sejuta kali dalam semalam.",
+   "note": "Sejuta views"
+  },
+  {
+   "id": "S37",
+   "size": "medium, OTS",
+   "key": 14,
+   "len": 67,
+   "first": 1853,
+   "line": "Besoknya, ada yang mengetuk pintu.",
+   "note": "Ketukan pintu"
+  },
+  {
+   "id": "S38",
+   "size": "low angle POV",
+   "key": 14,
+   "len": 28,
+   "first": 1920,
+   "line": "Pria berjas.",
+   "note": "Pria berjas di pintu"
+  },
+  {
+   "id": "S39",
+   "size": "medium close",
+   "key": 50,
+   "len": 82,
+   "first": 1948,
+   "line": "Dia tahu namamu. Dia tahu angkamu. Dia",
+   "note": "Map: SUBJEK G-10, 10%"
+  },
+  {
+   "id": "S40",
+   "size": "over the shoulder",
+   "key": 36,
+   "len": 115,
+   "first": 2030,
+   "line": "nggak datang untuk menolong. Dia datang untuk mengukur.",
+   "note": "Meteran"
+  },
+  {
+   "id": "S41",
+   "size": "wide",
+   "key": 30,
+   "len": 65,
+   "first": 2145,
+   "line": "Sore itu, adikmu ikut ke atap.",
+   "note": "Pip & adik ke atap"
+  },
+  {
+   "id": "S42",
+   "size": "medium",
+   "key": 20,
+   "len": 44,
+   "first": 2210,
+   "line": "Angin bertiup kencang.",
+   "note": "Angin kencang"
+  },
+  {
+   "id": "S43",
+   "size": "low insert",
+   "key": 30,
+   "len": 56,
+   "first": 2254,
+   "line": "Kakimu terangkat dari lantai.",
+   "note": "Kaki terangkat"
+  },
+  {
+   "id": "S44",
+   "size": "medium portrait",
+   "key": 30,
+   "len": 76,
+   "first": 2310,
+   "line": "Cuma tangan kecilnya yang menahanmu.",
+   "note": "Tangan kecil menahan"
+  },
+  {
+   "id": "S45",
+   "size": "readout",
+   "key": 40,
+   "len": 88,
+   "first": 2386,
+   "line": "Lalu angka itu turun lagi. Sembilan persen.",
+   "note": "10% -> 9%"
+  },
+  {
+   "id": "S46",
+   "size": "wide",
+   "key": 24,
+   "len": 19,
+   "first": 2474,
+   "line": "Delapan.",
+   "note": "8%, pegangan melorot"
+  },
+  {
+   "id": "S47",
+   "size": "extreme wide, pull up",
+   "key": 60,
+   "len": 135,
+   "first": 2493,
+   "line": "Berapa lama sampai kamu nggak bisa turun lagi?",
+   "note": "Akhir: langit merah"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 370
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "f": 1019
+  },
+  {
+   "kind": "flash",
+   "color": "#FFFFFF",
+   "f": 1652
+  },
+  {
+   "kind": "shake",
+   "len": 10,
+   "amp": 16,
+   "f": 1652
+  },
+  {
+   "kind": "flash",
+   "color": "#FF2233",
+   "o": 0.5,
+   "f": 2476
+  },
+  {
+   "kind": "shake",
+   "len": 12,
+   "amp": 8,
+   "f": 2495
+  }
+ ],
+ "audio": {}
+}

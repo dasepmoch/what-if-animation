@@ -29,6 +29,8 @@ export const settle = (t: number, amp: number, speed = 1.4, decay = 8) => (t > 0
 
 /** The camera: centre the world point (cx, cy) on screen at zoom s (1920 x 1080 frame). */
 export const camT = (cx: number, cy: number, s: number) => `translate(960 540) scale(${s}) translate(${-cx} ${-cy})`;
+/** The portrait camera (1080 x 1920 frame, 9:16 Shorts): centre the world point (cx, cy) at zoom s. */
+export const camV = (cx: number, cy: number, s: number) => `translate(540 960) scale(${s}) translate(${-cx} ${-cy})`;
 /** A short, decaying camera shake for a hit inside a shot (the engine has its own for cue-driven shakes). */
 export const shake = (t: number, from: number, len = 8, amp = 10) =>
   t >= from && t < from + len ? { x: Math.sin(t * 2.9) * amp * (1 - (t - from) / len), y: Math.cos(t * 3.7) * amp * 0.7 * (1 - (t - from) / len) } : { x: 0, y: 0 };

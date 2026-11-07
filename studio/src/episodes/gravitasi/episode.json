@@ -1,0 +1,1224 @@
+{
+ "id": "Gravitasi",
+ "slug": "gravitasi",
+ "format": "portrait",
+ "topic": "Gimana kalau gravitasimu tinggal sepuluh persen?",
+ "title": [
+  "GIMANA KALAU",
+  "GRAVITASIMU",
+  "CUMA 10%?"
+ ],
+ "accent": "10%",
+ "voice": {
+  "provider": "narrator",
+  "recipe": "whatif-narator-v1"
+ },
+ "script": [
+  {
+   "beat": "1 cold open: demo 1 (small, selfish) - kitchen",
+   "text": "Toples kue di rak paling atas. Lompat. Dapat."
+  },
+  {
+   "beat": "1 cold open: demo 2 (useful) - stairwell",
+   "text": "Telat masuk kelas. Tangga dua lantai. Lompat. Lompat. Sampai duluan."
+  },
+  {
+   "beat": "1 cold open: demo 3 (uncanny) - rooftop",
+   "text": "Atap ke atap. Lompat. Tapi kamu nggak turun-turun."
+  },
+  {
+   "beat": "2 premise + rule (title card)",
+   "text": "Gimana kalau gravitasimu tinggal sepuluh persen? Cuma kamu. Dunia tetap normal."
+  },
+  {
+   "beat": "3 the fun part (numbers, class, bed)",
+   "text": "Berat badanmu lima puluh kilo. Sekarang terasa cuma lima. Lompatan biasa setengah meter. Sekarang lima meter. Enam detik melayang di udara. Pelajaran olahraga? Kamu juara kelas. Temanmu cuma bisa melongo. Mau tidur? Kamu mengambang di atas kasur."
+  },
+  {
+   "beat": "4 the turn: the cost, one real fact",
+   "text": "Tapi tubuhmu punya aturan sendiri. Tulang cuma kuat kalau diberi beban. Astronaut di luar angkasa kehilangan satu sampai satu setengah persen kepadatan tulang. Setiap bulan. Itu nyata. Dan bebanmu sekarang tinggal sepersepuluh. Tubuhmu nggak tahu ini kekuatan super. Yang dia tahu, bebannya hilang."
+  },
+  {
+   "beat": "4b the consequence on screen",
+   "text": "Minggu ketiga. Pendaratan biasa. Krek. Bukan lantainya yang retak."
+  },
+  {
+   "beat": "5 someone powerful notices",
+   "text": "Temanmu merekam satu lompatanmu. Ditonton sejuta kali dalam semalam. Besoknya, ada yang mengetuk pintu. Pria berjas. Dia tahu namamu. Dia tahu angkamu. Dia nggak datang untuk menolong. Dia datang untuk mengukur."
+  },
+  {
+   "beat": "6 family at stake: little sister",
+   "text": "Sore itu, adikmu ikut ke atap. Angin bertiup kencang. Kakimu terangkat dari lantai. Cuma tangan kecilnya yang menahanmu."
+  },
+  {
+   "beat": "7 cliffhanger",
+   "text": "Lalu angka itu turun lagi. Sembilan persen. Delapan. Berapa lama sampai kamu nggak bisa turun lagi?"
+  }
+ ],
+ "science": [
+  {
+   "claim": "Astronaut kehilangan 1 sampai 1,5 persen kepadatan tulang setiap bulan di luar angkasa.",
+   "working": "NASA Human Research Program: on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions. The script states the astronaut figure only; it does not claim the same rate at 10% gravity.",
+   "source": "NASA, 'Risk of Spaceflight-Induced Bone Changes' (nasa.gov/reference/risk-of-spaceflight-induced-bone-changes)"
+  },
+  {
+   "claim": "Berat 50 kg terasa 5 kg; lompatan 0,5 m jadi 5 m; 6 detik di udara.",
+   "working": "Weight scales with g: 50 kg x 0.1 = 5 kg-force. Same take-off speed v = sqrt(2 x 9.81 x 0.5) = 3.13 m/s. Height h = v^2 / (2 x 0.981) = 5.0 m. Air time t = 2v / g = 2 x 3.13 / 0.981 = 6.4 s. A 0.5 m standing jump is a typical adult figure (story assumption, labelled 'lompatan biasa').",
+   "source": "projectile motion; h = v^2/2g, t = 2v/g"
+  },
+  {
+   "claim": "Dua lantai tangga, dua lompatan.",
+   "working": "A storey is about 3 m; one 5 m jump clears one storey, so two floors take two jumps (the script says 'Lompat. Lompat.').",
+   "source": "arithmetic"
+  }
+ ],
+ "gaps": {
+  "word": 0.12,
+  "comma": 0.2,
+  "sentence": 0.3,
+  "question": 0.42
+ },
+ "cast": [
+  "pipHood",
+  "mo",
+  "sis",
+  "suit"
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide, portrait",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Toples di rak paling atas, Pip berjinjit"
+  },
+  {
+   "id": "S2",
+   "size": "medium low, launch",
+   "set": "kitchen",
+   "key": 10,
+   "note": "Jongkok lalu meluncur ke atas"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "set": "kitchen",
+   "key": 12,
+   "note": "Melayang memeluk toples, smug"
+  },
+  {
+   "id": "S4",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 16,
+   "note": "Lari ke kaki tangga, 06:59"
+  },
+  {
+   "id": "S5",
+   "size": "extreme wide, two floors",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Tangga dua lantai menjulang"
+  },
+  {
+   "id": "S6",
+   "size": "wide tracking",
+   "set": "stairwell",
+   "key": 12,
+   "note": "Lompatan 1 ke bordes"
+  },
+  {
+   "id": "S7",
+   "size": "low angle",
+   "set": "stairwell",
+   "key": 10,
+   "note": "Lompatan 2 ke lantai atas"
+  },
+  {
+   "id": "S8",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 12,
+   "note": "Mendarat di pintu kelas, kacamata"
+  },
+  {
+   "id": "S9",
+   "size": "wide",
+   "set": "rooftop",
+   "key": 14,
+   "note": "Lari di atap menuju celah"
+  },
+  {
+   "id": "S10",
+   "size": "extreme wide low",
+   "set": "rooftop",
+   "key": 12,
+   "note": "Melompati gang, siluet matahari"
+  },
+  {
+   "id": "S11",
+   "size": "medium over the gap",
+   "set": "rooftop",
+   "key": 24,
+   "note": "Nggak turun-turun, 3 detik di udara"
+  },
+  {
+   "id": "S12",
+   "size": "title, wide",
+   "set": "rooftop",
+   "key": 40,
+   "note": "Title card"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 30,
+   "note": "Dunia 100%, kamu 10%"
+  },
+  {
+   "id": "S14",
+   "size": "macro insert, high",
+   "set": "bathroom",
+   "key": 14,
+   "note": "Timbangan 50.0"
+  },
+  {
+   "id": "S15",
+   "size": "medium",
+   "set": "bedroom",
+   "key": 24,
+   "note": "Angka jatuh ke 5.0, terangkat"
+  },
+  {
+   "id": "S16",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 20,
+   "note": "Lompatan biasa 0,5 m"
+  },
+  {
+   "id": "S16B",
+   "size": "schematic, tilt up",
+   "set": "schematic",
+   "key": 40,
+   "note": "Sekarang 5 m"
+  },
+  {
+   "id": "S17",
+   "size": "wide sky",
+   "set": "rooftop",
+   "key": 30,
+   "note": "Rebahan di udara, 6.4 s"
+  },
+  {
+   "id": "S18",
+   "size": "wide",
+   "set": "classroom",
+   "key": 18,
+   "note": "Tangan menyentuh plafon"
+  },
+  {
+   "id": "S19",
+   "size": "medium",
+   "set": "classroom",
+   "key": 14,
+   "note": "Medali, KAMU!"
+  },
+  {
+   "id": "S20",
+   "size": "close-up",
+   "set": "classroom",
+   "key": 12,
+   "note": "Mo melongo"
+  },
+  {
+   "id": "S21",
+   "size": "wide",
+   "set": "bedroom",
+   "key": 20,
+   "note": "Tidur melayang di atas kasur"
+  },
+  {
+   "id": "S22",
+   "size": "close-up",
+   "set": "bedroom",
+   "key": 20,
+   "note": "Tidur mengambang, Zzz"
+  },
+  {
+   "id": "S23",
+   "size": "medium low, red",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Lampu mati, mata terbuka"
+  },
+  {
+   "id": "S24",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 30,
+   "note": "Tulang + beban = kuat"
+  },
+  {
+   "id": "S25",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 60,
+   "note": "Astronaut -1% s/d -1,5%"
+  },
+  {
+   "id": "S26",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 30,
+   "note": "Batang per bulan"
+  },
+  {
+   "id": "S27",
+   "size": "close-up, red",
+   "set": "void",
+   "key": 18,
+   "note": "Itu nyata, SUMBER: NASA"
+  },
+  {
+   "id": "S28",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 30,
+   "note": "Beban 100% -> 10%"
+  },
+  {
+   "id": "S29",
+   "size": "schematic x-ray",
+   "set": "schematic",
+   "key": 24,
+   "note": "Rontgen tubuh"
+  },
+  {
+   "id": "S30",
+   "size": "macro schematic",
+   "set": "schematic",
+   "key": 40,
+   "note": "Tulang berlubang"
+  },
+  {
+   "id": "S31",
+   "size": "insert",
+   "set": "bedroom",
+   "key": 12,
+   "note": "Kalender 21 hari"
+  },
+  {
+   "id": "S32",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Pendaratan biasa"
+  },
+  {
+   "id": "S33",
+   "size": "macro insert, x-ray",
+   "set": "void",
+   "key": 8,
+   "note": "Krek"
+  },
+  {
+   "id": "S34",
+   "size": "close-up low, red",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Bukan lantainya"
+  },
+  {
+   "id": "S35",
+   "size": "medium",
+   "set": "rooftop",
+   "key": 20,
+   "note": "Mo merekam"
+  },
+  {
+   "id": "S36",
+   "size": "macro insert",
+   "set": "void",
+   "key": 50,
+   "note": "Sejuta views"
+  },
+  {
+   "id": "S37",
+   "size": "medium, OTS",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Ketukan pintu"
+  },
+  {
+   "id": "S38",
+   "size": "low angle POV",
+   "set": "doorway",
+   "key": 14,
+   "note": "Pria berjas di pintu"
+  },
+  {
+   "id": "S39",
+   "size": "medium close",
+   "set": "doorway",
+   "key": 50,
+   "note": "Map: SUBJEK G-10, 10%"
+  },
+  {
+   "id": "S40",
+   "size": "over the shoulder",
+   "set": "doorway",
+   "key": 36,
+   "note": "Meteran"
+  },
+  {
+   "id": "S41",
+   "size": "wide",
+   "set": "rooftop",
+   "key": 30,
+   "note": "Pip & adik ke atap"
+  },
+  {
+   "id": "S42",
+   "size": "medium",
+   "set": "rooftop",
+   "key": 20,
+   "note": "Angin kencang"
+  },
+  {
+   "id": "S43",
+   "size": "low insert",
+   "set": "rooftop",
+   "key": 30,
+   "note": "Kaki terangkat"
+  },
+  {
+   "id": "S44",
+   "size": "medium portrait",
+   "set": "rooftop",
+   "key": 30,
+   "note": "Tangan kecil menahan"
+  },
+  {
+   "id": "S45",
+   "size": "readout",
+   "set": "void",
+   "key": 40,
+   "note": "10% -> 9%"
+  },
+  {
+   "id": "S46",
+   "size": "wide",
+   "set": "rooftop",
+   "key": 24,
+   "note": "8%, pegangan melorot"
+  },
+  {
+   "id": "S47",
+   "size": "extreme wide, pull up",
+   "set": "rooftop",
+   "key": 60,
+   "note": "Akhir: langit merah"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "Toples"
+  },
+  {
+   "shot": "S2",
+   "at": "Lompat",
+   "look": "g10"
+  },
+  {
+   "shot": "S3",
+   "at": "Dapat"
+  },
+  {
+   "shot": "S4",
+   "at": "Telat"
+  },
+  {
+   "shot": "S5",
+   "at": "Tangga"
+  },
+  {
+   "shot": "S6",
+   "at": "Lompat",
+   "look": "g10"
+  },
+  {
+   "shot": "S7",
+   "at": "Lompat",
+   "look": "g10"
+  },
+  {
+   "shot": "S8",
+   "at": "Sampai"
+  },
+  {
+   "shot": "S9",
+   "at": "Atap"
+  },
+  {
+   "shot": "S10",
+   "at": "Lompat",
+   "look": "g10"
+  },
+  {
+   "shot": "S11",
+   "at": "Tapi"
+  },
+  {
+   "shot": "S12",
+   "at": "Gimana"
+  },
+  {
+   "shot": "S13",
+   "at": "Cuma"
+  },
+  {
+   "shot": "S14",
+   "at": "Berat"
+  },
+  {
+   "shot": "S15",
+   "at": "Sekarang"
+  },
+  {
+   "shot": "S16",
+   "at": "Lompatan"
+  },
+  {
+   "shot": "S16B",
+   "at": "Sekarang",
+   "look": "g10"
+  },
+  {
+   "shot": "S17",
+   "at": "Enam"
+  },
+  {
+   "shot": "S18",
+   "at": "Pelajaran"
+  },
+  {
+   "shot": "S19",
+   "at": "Kamu"
+  },
+  {
+   "shot": "S20",
+   "at": "Temanmu"
+  },
+  {
+   "shot": "S21",
+   "at": "Mau"
+  },
+  {
+   "shot": "S22",
+   "at": "Kamu"
+  },
+  {
+   "shot": "S23",
+   "at": "Tapi"
+  },
+  {
+   "shot": "S24",
+   "at": "Tulang"
+  },
+  {
+   "shot": "S25",
+   "at": "Astronaut"
+  },
+  {
+   "shot": "S26",
+   "at": "Setiap"
+  },
+  {
+   "shot": "S27",
+   "at": "Itu"
+  },
+  {
+   "shot": "S28",
+   "at": "Dan"
+  },
+  {
+   "shot": "S29",
+   "at": "Tubuhmu"
+  },
+  {
+   "shot": "S30",
+   "at": "Yang"
+  },
+  {
+   "shot": "S31",
+   "at": "Minggu"
+  },
+  {
+   "shot": "S32",
+   "at": "Pendaratan"
+  },
+  {
+   "shot": "S33",
+   "at": "Krek"
+  },
+  {
+   "shot": "S34",
+   "at": "Bukan"
+  },
+  {
+   "shot": "S35",
+   "at": "Temanmu"
+  },
+  {
+   "shot": "S36",
+   "at": "Ditonton"
+  },
+  {
+   "shot": "S37",
+   "at": "Besoknya"
+  },
+  {
+   "shot": "S38",
+   "at": "Pria"
+  },
+  {
+   "shot": "S39",
+   "at": "Dia"
+  },
+  {
+   "shot": "S40",
+   "at": "nggak"
+  },
+  {
+   "shot": "S41",
+   "at": "Sore"
+  },
+  {
+   "shot": "S42",
+   "at": "Angin"
+  },
+  {
+   "shot": "S43",
+   "at": "Kakimu"
+  },
+  {
+   "shot": "S44",
+   "at": "Cuma"
+  },
+  {
+   "shot": "S45",
+   "at": "Lalu"
+  },
+  {
+   "shot": "S46",
+   "at": "Delapan"
+  },
+  {
+   "shot": "S47",
+   "at": "Berapa"
+  }
+ ],
+ "fx": [
+  {
+   "at": "Gimana",
+   "kind": "flash",
+   "color": "#FFF3DC"
+  },
+  {
+   "at": "Tapi#2",
+   "kind": "flash",
+   "color": "#FF3344"
+  },
+  {
+   "at": "Krek",
+   "kind": "flash",
+   "color": "#FFFFFF"
+  },
+  {
+   "at": "Krek",
+   "kind": "shake",
+   "len": 10,
+   "amp": 16
+  },
+  {
+   "at": "Delapan",
+   "kind": "flash",
+   "color": "#FF2233",
+   "o": 0.5
+  },
+  {
+   "at": "Berapa",
+   "kind": "shake",
+   "len": 12,
+   "amp": 8
+  }
+ ],
+ "tail": 1.6,
+ "sound": {
+  "clips": {
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "class_murmur": [
+    "a quiet classroom murmur, kids whispering, chairs shuffling",
+    2.0
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "dark_bed": [
+    "derived: synthesised low drone pad with a slow heartbeat pulse, ominous, 70 bpm",
+    24.0
+   ],
+   "jump": [
+    "derived: rewind_start-bbf777d9 + sparkle tail, airy launch whoosh",
+    0.8
+   ],
+   "knock": [
+    "derived: catch-ffb439cd lowpass 900 Hz, a knuckle knock on a wooden door",
+    0.5
+   ],
+   "land": [
+    "a heavy body landing flat on a wooden floor, cartoon thud",
+    0.6
+   ],
+   "step": [
+    "a single sneaker footstep on a wooden stair, close",
+    0.5
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "ding": [
+    "a correct answer ding, bright bell chime",
+    0.8
+   ],
+   "shades": [
+    "cool sunglasses sliding on with a swoosh and a bright metallic glint",
+    0.9
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "crack": [
+    "glass cracking sharply, the crack spreading across a pane",
+    1.1
+   ],
+   "laugh": [
+    "a small classroom of kids bursting out laughing",
+    1.6
+   ],
+   "gasp": [
+    "two young people gasping in surprise at the same moment, cartoon, short",
+    0.8
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "copy_click": [
+    "a crisp satisfying computer copy click with a tiny soft digital chime, short",
+    0.5
+   ],
+   "select_draw": [
+    "a quick digital selection sound, a soft rising electronic shimmer as a box is drawn on screen, short",
+    0.6
+   ],
+   "glitch": [
+    "a short digital glitch, an electric buzz and crackle flickering like an unstable hologram",
+    1.5
+   ],
+   "switch_off": [
+    "a heavy electrical breaker switching off with a dull clunk",
+    0.5
+   ],
+   "power_hum": [
+    "a deep electrical power grid hum swelling louder, transformers buzzing, rising",
+    3.0
+   ],
+   "big_step": [
+    "a cartoon exaggerated careful tiptoe step, light airy whoosh",
+    0.7
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "room_tone",
+    0.12,
+    "onset",
+    "S9"
+   ],
+   [
+    "S2+5",
+    "jump",
+    0.6
+   ],
+   [
+    "S2+9",
+    "sparkle",
+    0.2
+   ],
+   [
+    "S3+3",
+    "pop",
+    0.35
+   ],
+   [
+    "S3+5",
+    "sparkle",
+    0.25
+   ],
+   [
+    "S6+4",
+    "jump",
+    0.55
+   ],
+   [
+    "S6+20",
+    "land",
+    0.45
+   ],
+   [
+    "S7+3",
+    "jump",
+    0.55
+   ],
+   [
+    "S7+18",
+    "land",
+    0.45
+   ],
+   [
+    "S8+5",
+    "shades",
+    0.45
+   ],
+   [
+    "S9",
+    "roof_wind",
+    0.16,
+    "onset",
+    "S14"
+   ],
+   [
+    "S10+2",
+    "jump",
+    0.6
+   ],
+   [
+    "Gimana",
+    "title_boom",
+    0.8,
+    "peak"
+   ],
+   [
+    "S13+4",
+    "pop",
+    0.3
+   ],
+   [
+    "S13+9",
+    "sparkle",
+    0.22
+   ],
+   [
+    "S14",
+    "room_tone",
+    0.1,
+    "onset",
+    "S17"
+   ],
+   [
+    "S14+2",
+    "copy_click",
+    0.45
+   ],
+   [
+    "S15+3",
+    "counter_tick",
+    0.3,
+    "onset",
+    "S16"
+   ],
+   [
+    "S15+17",
+    "sparkle",
+    0.3
+   ],
+   [
+    "S16+4",
+    "pop",
+    0.25
+   ],
+   [
+    "S16B+2",
+    "jump",
+    0.6
+   ],
+   [
+    "S16B+22",
+    "ding",
+    0.35
+   ],
+   [
+    "S17",
+    "roof_wind",
+    0.12,
+    "onset",
+    "S18"
+   ],
+   [
+    "S17+8",
+    "sparkle",
+    0.2
+   ],
+   [
+    "S18",
+    "class_murmur",
+    0.18,
+    "onset",
+    "S21"
+   ],
+   [
+    "S18+3",
+    "jump",
+    0.5
+   ],
+   [
+    "S18+20",
+    "pop",
+    0.4
+   ],
+   [
+    "S18+14",
+    "gasp",
+    0.3
+   ],
+   [
+    "S18+37",
+    "land",
+    0.45
+   ],
+   [
+    "S19+3",
+    "ding",
+    0.5
+   ],
+   [
+    "S19+6",
+    "laugh",
+    0.3
+   ],
+   [
+    "S20+4",
+    "gasp",
+    0.35
+   ],
+   [
+    "S21",
+    "room_tone",
+    0.1,
+    "onset",
+    "S23"
+   ],
+   [
+    "S22+8",
+    "sparkle",
+    0.12
+   ],
+   [
+    "Tapi#2",
+    "drone_hit",
+    0.85
+   ],
+   [
+    "S23+3",
+    "switch_off",
+    0.45
+   ],
+   [
+    "S24+10",
+    "land",
+    0.25
+   ],
+   [
+    "S24+13",
+    "land",
+    0.25
+   ],
+   [
+    "S24+16",
+    "land",
+    0.25
+   ],
+   [
+    "S24+21",
+    "ding",
+    0.25
+   ],
+   [
+    "S25+20",
+    "select_draw",
+    0.3
+   ],
+   [
+    "S26+3",
+    "counter_tick",
+    0.22,
+    "onset",
+    "S27"
+   ],
+   [
+    "S27",
+    "drone_hit",
+    0.4
+   ],
+   [
+    "S28+4",
+    "counter_tick",
+    0.25,
+    "onset",
+    "S29"
+   ],
+   [
+    "S29",
+    "glitch",
+    0.2
+   ],
+   [
+    "S29",
+    "power_hum",
+    0.12,
+    "onset",
+    "S31"
+   ],
+   [
+    "S31",
+    "room_tone",
+    0.1,
+    "onset",
+    "S35"
+   ],
+   [
+    "S31+6",
+    "select_draw",
+    0.3
+   ],
+   [
+    "S32+10",
+    "land",
+    0.5
+   ],
+   [
+    "Krek+5",
+    "crack",
+    0.95
+   ],
+   [
+    "S34",
+    "drone_hit",
+    0.5
+   ],
+   [
+    "S35",
+    "roof_wind",
+    0.14,
+    "onset",
+    "S37"
+   ],
+   [
+    "S35+6",
+    "copy_click",
+    0.4
+   ],
+   [
+    "S36",
+    "counter_tick",
+    0.4,
+    "onset",
+    "S37"
+   ],
+   [
+    "S37",
+    "room_tone",
+    0.1,
+    "onset",
+    "S41"
+   ],
+   [
+    "S37+6",
+    "knock",
+    0.7
+   ],
+   [
+    "S37+12",
+    "knock",
+    0.7
+   ],
+   [
+    "S37+18",
+    "knock",
+    0.75
+   ],
+   [
+    "S38+2",
+    "drone_hit",
+    0.5
+   ],
+   [
+    "angkamu+4",
+    "big_step",
+    0.45
+   ],
+   [
+    "S40+10",
+    "select_draw",
+    0.4
+   ],
+   [
+    "S41",
+    "roof_wind",
+    0.22,
+    "onset",
+    "S42"
+   ],
+   [
+    "S42",
+    "roof_wind",
+    0.5,
+    "onset",
+    "S45"
+   ],
+   [
+    "S43+4",
+    "jump",
+    0.4
+   ],
+   [
+    "S45",
+    "roof_wind",
+    0.25
+   ],
+   [
+    "Sembilan+2",
+    "glitch",
+    0.55
+   ],
+   [
+    "Delapan+2",
+    "glitch",
+    0.6
+   ],
+   [
+    "Delapan",
+    "drone_hit",
+    0.6
+   ],
+   [
+    "Berapa",
+    "drone_hit",
+    0.7
+   ]
+  ],
+  "repeats": [
+   {
+    "at": "S4",
+    "clip": "step",
+    "n": 5,
+    "every": 3,
+    "gain": [
+     0.2,
+     0.3
+    ],
+    "pitch": [
+     1.0,
+     1.2
+    ]
+   },
+   {
+    "at": "S9",
+    "clip": "step",
+    "n": 9,
+    "every": 3,
+    "gain": [
+     0.18,
+     0.28
+    ],
+    "pitch": [
+     1.0,
+     1.25
+    ]
+   },
+   {
+    "at": "S36+6",
+    "clip": "pop",
+    "n": 6,
+    "every": 7,
+    "gain": [
+     0.08,
+     0.14
+    ],
+    "pitch": [
+     1.0,
+     1.4
+    ]
+   },
+   {
+    "at": "S41",
+    "clip": "step",
+    "n": 10,
+    "every": 4,
+    "gain": [
+     0.12,
+     0.2
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ]
+   }
+  ],
+  "music": [
+   {
+    "clip": "music",
+    "until": "Gimana",
+    "loop": true
+   },
+   {
+    "clip": "music",
+    "from": "Gimana+20",
+    "until": "Tapi#2",
+    "loop": true
+   },
+   {
+    "clip": "dark_bed",
+    "from": "Tapi#2",
+    "loop": true
+   }
+  ],
+  "levels": {
+   "sfx_lu": -1.0,
+   "music_lu": -11.0
+  }
+ }
+}
