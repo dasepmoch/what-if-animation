@@ -1,0 +1,1029 @@
+{
+ "slug": "dengar-pikiran",
+ "title": "GIMANA KALAU KAMU BISA DENGAR PIKIRAN ORANG?",
+ "fps": 30,
+ "total": 2698,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 45,
+   "t0": 0,
+   "t1": 45,
+   "line": "Ibu bilang kuenya habis."
+  },
+  {
+   "shot": "S2",
+   "a": 45,
+   "b": 86,
+   "t0": 0,
+   "t1": 41,
+   "line": "Tapi kamu dengar pikirannya.",
+   "look": "listen"
+  },
+  {
+   "shot": "S3",
+   "a": 86,
+   "b": 105,
+   "t0": 0,
+   "t1": 19,
+   "line": "Di lemari atas.",
+   "look": "listen"
+  },
+  {
+   "shot": "S4",
+   "a": 105,
+   "b": 125,
+   "t0": 0,
+   "t1": 20,
+   "line": "Dapat."
+  },
+  {
+   "shot": "S5",
+   "a": 125,
+   "b": 164,
+   "t0": 0,
+   "t1": 39,
+   "line": "Ulangan matematika."
+  },
+  {
+   "shot": "S6",
+   "a": 164,
+   "b": 211,
+   "t0": 0,
+   "t1": 47,
+   "line": "Kamu nggak tahu jawabannya."
+  },
+  {
+   "shot": "S7",
+   "a": 211,
+   "b": 252,
+   "t0": 0,
+   "t1": 41,
+   "line": "Temanmu tahu. Jawabannya dua belas.",
+   "look": "listen"
+  },
+  {
+   "shot": "S8",
+   "a": 252,
+   "b": 285,
+   "t0": 0,
+   "t1": 33,
+   "line": "Seratus."
+  },
+  {
+   "shot": "S9",
+   "a": 285,
+   "b": 332,
+   "t0": 0,
+   "t1": 47,
+   "line": "Orang asing lewat di tangga."
+  },
+  {
+   "shot": "S10",
+   "a": 332,
+   "b": 392,
+   "t0": 0,
+   "t1": 60,
+   "line": "Dia nggak bicara sepatah kata pun."
+  },
+  {
+   "shot": "S11",
+   "a": 392,
+   "b": 442,
+   "t0": 0,
+   "t1": 50,
+   "line": "Tapi dia memikirkan namamu.",
+   "look": "listen"
+  },
+  {
+   "shot": "S12",
+   "a": 442,
+   "b": 519,
+   "t0": 0,
+   "t1": 77,
+   "line": "Gimana kalau kamu bisa dengar pikiran orang?"
+  },
+  {
+   "shot": "S13",
+   "a": 519,
+   "b": 551,
+   "t0": 0,
+   "t1": 32,
+   "line": "Semua orang di dekatmu."
+  },
+  {
+   "shot": "S14",
+   "a": 551,
+   "b": 597,
+   "t0": 0,
+   "t1": 46,
+   "line": "Dan nggak bisa dimatikan."
+  },
+  {
+   "shot": "S15",
+   "a": 597,
+   "b": 641,
+   "t0": 0,
+   "t1": 44,
+   "line": "Awalnya, ini luar biasa."
+  },
+  {
+   "shot": "S16",
+   "a": 641,
+   "b": 677,
+   "t0": 0,
+   "t1": 36,
+   "line": "Kamu tahu kado ulang tahunmu",
+   "look": "listen"
+  },
+  {
+   "shot": "S17",
+   "a": 677,
+   "b": 718,
+   "t0": 0,
+   "t1": 41,
+   "line": "sebulan lebih awal."
+  },
+  {
+   "shot": "S18",
+   "a": 718,
+   "b": 751,
+   "t0": 0,
+   "t1": 33,
+   "line": "Main tebak kartu?",
+   "look": "listen"
+  },
+  {
+   "shot": "S19",
+   "a": 751,
+   "b": 786,
+   "t0": 0,
+   "t1": 35,
+   "line": "Nggak pernah kalah."
+  },
+  {
+   "shot": "S20",
+   "a": 786,
+   "b": 835,
+   "t0": 0,
+   "t1": 49,
+   "line": "Kamu tahu siapa yang bohong.",
+   "look": "listen"
+  },
+  {
+   "shot": "S21",
+   "a": 835,
+   "b": 880,
+   "t0": 0,
+   "t1": 45,
+   "line": "Kamu tahu siapa yang suka kamu.",
+   "look": "listen"
+  },
+  {
+   "shot": "S22",
+   "a": 880,
+   "b": 923,
+   "t0": 0,
+   "t1": 43,
+   "line": "Di kelas, kamu ranking satu."
+  },
+  {
+   "shot": "S23",
+   "a": 923,
+   "b": 954,
+   "t0": 0,
+   "t1": 31,
+   "line": "Tanpa belajar."
+  },
+  {
+   "shot": "S23B",
+   "a": 954,
+   "b": 1032,
+   "t0": 0,
+   "t1": 78,
+   "line": "Hidupmu terasa seperti main game, pakai kode curang."
+  },
+  {
+   "shot": "S24",
+   "a": 1032,
+   "b": 1070,
+   "t0": 0,
+   "t1": 38,
+   "line": "Tapi pikiran nggak pernah diam."
+  },
+  {
+   "shot": "S25",
+   "a": 1070,
+   "b": 1178,
+   "t0": 0,
+   "t1": 108,
+   "line": "Rata-rata orang punya sekitar enam ribu dua ratus pikiran sehari."
+  },
+  {
+   "shot": "S26",
+   "a": 1178,
+   "b": 1205,
+   "t0": 0,
+   "t1": 27,
+   "line": "Itu nyata."
+  },
+  {
+   "shot": "S27",
+   "a": 1205,
+   "b": 1254,
+   "t0": 0,
+   "t1": 49,
+   "line": "Satu kelas, tiga puluh orang."
+  },
+  {
+   "shot": "S28",
+   "a": 1254,
+   "b": 1303,
+   "t0": 0,
+   "t1": 49,
+   "line": "Seratus delapan puluh enam ribu pikiran."
+  },
+  {
+   "shot": "S29",
+   "a": 1303,
+   "b": 1336,
+   "t0": 0,
+   "t1": 33,
+   "line": "Sehari."
+  },
+  {
+   "shot": "S30",
+   "a": 1336,
+   "b": 1392,
+   "t0": 0,
+   "t1": 56,
+   "line": "Semuanya masuk ke kepalamu."
+  },
+  {
+   "shot": "S31",
+   "a": 1392,
+   "b": 1424,
+   "t0": 0,
+   "t1": 32,
+   "line": "Hari ketiga."
+  },
+  {
+   "shot": "S32",
+   "a": 1424,
+   "b": 1464,
+   "t0": 0,
+   "t1": 40,
+   "line": "Semua suara jadi satu.",
+   "look": "noise"
+  },
+  {
+   "shot": "S33",
+   "a": 1464,
+   "b": 1495,
+   "t0": 0,
+   "t1": 31,
+   "line": "Kamu nggak bisa tidur.",
+   "look": "noise"
+  },
+  {
+   "shot": "S34",
+   "a": 1495,
+   "b": 1554,
+   "t0": 0,
+   "t1": 59,
+   "line": "Kamu nggak bisa dengar pikiranmu sendiri.",
+   "look": "noise"
+  },
+  {
+   "shot": "S35",
+   "a": 1554,
+   "b": 1581,
+   "t0": 0,
+   "t1": 27,
+   "line": "Ibu bicara.",
+   "look": "noise"
+  },
+  {
+   "shot": "S36",
+   "a": 1581,
+   "b": 1655,
+   "t0": 0,
+   "t1": 74,
+   "line": "Kamu nggak tahu, itu mulutnya, atau kepalanya.",
+   "look": "noise"
+  },
+  {
+   "shot": "S36B",
+   "a": 1655,
+   "b": 1705,
+   "t0": 0,
+   "t1": 50,
+   "line": "Kamu tutup telinga. Percuma.",
+   "look": "noise"
+  },
+  {
+   "shot": "S36C",
+   "a": 1705,
+   "b": 1749,
+   "t0": 0,
+   "t1": 44,
+   "line": "Suaranya bukan dari luar.",
+   "look": "noise"
+  },
+  {
+   "shot": "S37",
+   "a": 1749,
+   "b": 1836,
+   "t0": 0,
+   "t1": 87,
+   "line": "Lalu, di tengah kebisingan, ada satu pikiran yang beda."
+  },
+  {
+   "shot": "S38",
+   "a": 1836,
+   "b": 1882,
+   "t0": 0,
+   "t1": 46,
+   "line": "Tenang. Jelas."
+  },
+  {
+   "shot": "S39",
+   "a": 1882,
+   "b": 1919,
+   "t0": 0,
+   "t1": 37,
+   "line": "Pria berjas di ujung tangga."
+  },
+  {
+   "shot": "S40",
+   "a": 1919,
+   "b": 1941,
+   "t0": 0,
+   "t1": 22,
+   "line": "Orang yang sama."
+  },
+  {
+   "shot": "S41",
+   "a": 1941,
+   "b": 1970,
+   "t0": 0,
+   "t1": 29,
+   "line": "Bibirnya diam."
+  },
+  {
+   "shot": "S42",
+   "a": 1970,
+   "b": 2033,
+   "t0": 0,
+   "t1": 63,
+   "line": "Pikirannya bilang, kami tahu kamu bisa dengar.",
+   "look": "listen"
+  },
+  {
+   "shot": "S42B",
+   "a": 2033,
+   "b": 2112,
+   "t0": 0,
+   "t1": 79,
+   "line": "Lalu dia berbalik, dan pergi. Tanpa suara."
+  },
+  {
+   "shot": "S43",
+   "a": 2112,
+   "b": 2175,
+   "t0": 0,
+   "t1": 63,
+   "line": "Malam itu, adikmu bilang dia nggak takut."
+  },
+  {
+   "shot": "S43B",
+   "a": 2175,
+   "b": 2258,
+   "t0": 0,
+   "t1": 83,
+   "line": "Kamu matikan lampunya. Kamu tutup pintunya."
+  },
+  {
+   "shot": "S44",
+   "a": 2258,
+   "b": 2313,
+   "t0": 0,
+   "t1": 55,
+   "line": "Lalu kamu dengar pikirannya berteriak.",
+   "look": "listen"
+  },
+  {
+   "shot": "S45",
+   "a": 2313,
+   "b": 2354,
+   "t0": 0,
+   "t1": 41,
+   "line": "Ada orang di jendela."
+  },
+  {
+   "shot": "S46",
+   "a": 2354,
+   "b": 2396,
+   "t0": 0,
+   "t1": 42,
+   "line": "Kamu lari ke kamarnya."
+  },
+  {
+   "shot": "S47",
+   "a": 2396,
+   "b": 2435,
+   "t0": 0,
+   "t1": 39,
+   "line": "Jendelanya terbuka."
+  },
+  {
+   "shot": "S47B",
+   "a": 2435,
+   "b": 2508,
+   "t0": 0,
+   "t1": 73,
+   "line": "Cuma satu pikiran yang tersisa di kamar itu."
+  },
+  {
+   "shot": "S47C",
+   "a": 2508,
+   "b": 2561,
+   "t0": 0,
+   "t1": 53,
+   "line": "Dan itu bukan pikiran adikmu."
+  },
+  {
+   "shot": "S48",
+   "a": 2561,
+   "b": 2607,
+   "t0": 0,
+   "t1": 46,
+   "line": "Kalau kamu bisa dengar mereka,"
+  },
+  {
+   "shot": "S49",
+   "a": 2607,
+   "b": 2698,
+   "t0": 0,
+   "t1": 91,
+   "line": "siapa yang selama ini dengar kamu?"
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 14,
+   "len": 45,
+   "first": 0,
+   "line": "Ibu bilang kuenya habis.",
+   "note": "Ibu menunjukkan piring kosong"
+  },
+  {
+   "id": "S2",
+   "size": "close-up",
+   "key": 14,
+   "len": 41,
+   "first": 45,
+   "line": "Tapi kamu dengar pikirannya.",
+   "note": "Riak cyan, mata Pip menyala"
+  },
+  {
+   "id": "S3",
+   "size": "medium",
+   "key": 14,
+   "len": 19,
+   "first": 86,
+   "line": "Di lemari atas.",
+   "note": "Pikiran Ibu: lemari atas + toples"
+  },
+  {
+   "id": "S4",
+   "size": "medium low",
+   "key": 14,
+   "len": 20,
+   "first": 105,
+   "line": "Dapat.",
+   "note": "Pip memeluk toples, smug"
+  },
+  {
+   "id": "S5",
+   "size": "wide",
+   "key": 14,
+   "len": 39,
+   "first": 125,
+   "line": "Ulangan matematika.",
+   "note": "Ulangan matematika 48:4"
+  },
+  {
+   "id": "S6",
+   "size": "insert top-down",
+   "key": 14,
+   "len": 47,
+   "first": 164,
+   "line": "Kamu nggak tahu jawabannya.",
+   "note": "Kertas kosong, pensil ragu"
+  },
+  {
+   "id": "S7",
+   "size": "medium",
+   "key": 14,
+   "len": 41,
+   "first": 211,
+   "line": "Temanmu tahu. Jawabannya dua belas.",
+   "note": "Pikiran Mo: 12"
+  },
+  {
+   "id": "S8",
+   "size": "insert top-down",
+   "key": 14,
+   "len": 33,
+   "first": 252,
+   "line": "Seratus.",
+   "note": "Nilai 100 merah"
+  },
+  {
+   "id": "S9",
+   "size": "wide",
+   "key": 14,
+   "len": 47,
+   "first": 285,
+   "line": "Orang asing lewat di tangga.",
+   "note": "Orang asing turun tangga"
+  },
+  {
+   "id": "S10",
+   "size": "medium",
+   "key": 14,
+   "len": 60,
+   "first": 332,
+   "line": "Dia nggak bicara sepatah kata pun.",
+   "note": "Berpapasan, wajah gelap"
+  },
+  {
+   "id": "S11",
+   "size": "close-up",
+   "key": 14,
+   "len": 50,
+   "first": 392,
+   "line": "Tapi dia memikirkan namamu.",
+   "note": "Pikiran dingin: wajah Pip"
+  },
+  {
+   "id": "S12",
+   "size": "title wide",
+   "key": 14,
+   "len": 77,
+   "first": 442,
+   "line": "Gimana kalau kamu bisa dengar pikiran orang?",
+   "note": "Judul + pikiran kota"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "key": 14,
+   "len": 32,
+   "first": 519,
+   "line": "Semua orang di dekatmu.",
+   "note": "Lingkaran jangkauan"
+  },
+  {
+   "id": "S14",
+   "size": "schematic",
+   "key": 14,
+   "len": 46,
+   "first": 551,
+   "line": "Dan nggak bisa dimatikan.",
+   "note": "Saklar OFF gagal"
+  },
+  {
+   "id": "S15",
+   "size": "medium",
+   "key": 14,
+   "len": 44,
+   "first": 597,
+   "line": "Awalnya, ini luar biasa.",
+   "note": "Pip bersorak"
+  },
+  {
+   "id": "S16",
+   "size": "medium",
+   "key": 14,
+   "len": 36,
+   "first": 641,
+   "line": "Kamu tahu kado ulang tahunmu",
+   "note": "Ibu sembunyikan kado; pikiran: sepeda"
+  },
+  {
+   "id": "S17",
+   "size": "insert",
+   "key": 14,
+   "len": 41,
+   "first": 677,
+   "line": "sebulan lebih awal.",
+   "note": "Kalender -30 hari"
+  },
+  {
+   "id": "S18",
+   "size": "insert top-down",
+   "key": 14,
+   "len": 33,
+   "first": 718,
+   "line": "Main tebak kartu?",
+   "note": "Kartu Mo: 7 hati"
+  },
+  {
+   "id": "S19",
+   "size": "medium two-shot",
+   "key": 14,
+   "len": 35,
+   "first": 751,
+   "line": "Nggak pernah kalah.",
+   "note": "Pip menang, kartu Mo terbang"
+  },
+  {
+   "id": "S20",
+   "size": "medium",
+   "key": 14,
+   "len": 49,
+   "first": 786,
+   "line": "Kamu tahu siapa yang bohong.",
+   "note": "Teman bohong: JUJUR dicoret"
+  },
+  {
+   "id": "S21",
+   "size": "over the shoulder",
+   "key": 14,
+   "len": 45,
+   "first": 835,
+   "line": "Kamu tahu siapa yang suka kamu.",
+   "note": "Hati dari teman"
+  },
+  {
+   "id": "S22",
+   "size": "medium wide",
+   "key": 14,
+   "len": 43,
+   "first": 880,
+   "line": "Di kelas, kamu ranking satu.",
+   "note": "Ranking 1, medali"
+  },
+  {
+   "id": "S23",
+   "size": "close-up",
+   "key": 14,
+   "len": 31,
+   "first": 923,
+   "line": "Tanpa belajar.",
+   "note": "Kacamata hitam, santai"
+  },
+  {
+   "id": "S23B",
+   "size": "wide walk",
+   "key": 14,
+   "len": 78,
+   "first": 954,
+   "line": "Hidupmu terasa seperti main game, pakai kode curang.",
+   "note": "Hidup seperti game: CHEAT ON"
+  },
+  {
+   "id": "S24",
+   "size": "low medium",
+   "key": 14,
+   "len": 38,
+   "first": 1032,
+   "line": "Tapi pikiran nggak pernah diam.",
+   "note": "Merah, pikiran mulai menumpuk"
+  },
+  {
+   "id": "S25",
+   "size": "schematic",
+   "key": 14,
+   "len": 108,
+   "first": 1070,
+   "line": "Rata-rata orang punya sekitar enam ribu dua ratus pikiran sehari.",
+   "note": "6.200 pikiran / hari"
+  },
+  {
+   "id": "S26",
+   "size": "close-up",
+   "key": 14,
+   "len": 27,
+   "first": 1178,
+   "line": "Itu nyata.",
+   "note": "Itu nyata + sumber"
+  },
+  {
+   "id": "S27",
+   "size": "schematic",
+   "key": 14,
+   "len": 49,
+   "first": 1205,
+   "line": "Satu kelas, tiga puluh orang.",
+   "note": "30 kepala"
+  },
+  {
+   "id": "S28",
+   "size": "schematic",
+   "key": 14,
+   "len": 49,
+   "first": 1254,
+   "line": "Seratus delapan puluh enam ribu pikiran.",
+   "note": "186.000"
+  },
+  {
+   "id": "S29",
+   "size": "schematic",
+   "key": 14,
+   "len": 33,
+   "first": 1303,
+   "line": "Sehari.",
+   "note": "Jam 24 jam"
+  },
+  {
+   "id": "S30",
+   "size": "schematic push-in",
+   "key": 14,
+   "len": 56,
+   "first": 1336,
+   "line": "Semuanya masuk ke kepalamu.",
+   "note": "Semua masuk ke kepalamu"
+  },
+  {
+   "id": "S31",
+   "size": "insert",
+   "key": 14,
+   "len": 32,
+   "first": 1392,
+   "line": "Hari ketiga.",
+   "note": "Hari ketiga"
+  },
+  {
+   "id": "S32",
+   "size": "wide",
+   "key": 14,
+   "len": 40,
+   "first": 1424,
+   "line": "Semua suara jadi satu.",
+   "note": "Kelas penuh pikiran abu"
+  },
+  {
+   "id": "S33",
+   "size": "wide",
+   "key": 14,
+   "len": 31,
+   "first": 1464,
+   "line": "Kamu nggak bisa tidur.",
+   "note": "Nggak bisa tidur 03:12"
+  },
+  {
+   "id": "S34",
+   "size": "close-up",
+   "key": 14,
+   "len": 59,
+   "first": 1495,
+   "line": "Kamu nggak bisa dengar pikiranmu sendiri.",
+   "note": "Pikiran sendiri tergencet"
+  },
+  {
+   "id": "S35",
+   "size": "medium",
+   "key": 14,
+   "len": 27,
+   "first": 1554,
+   "line": "Ibu bicara.",
+   "note": "Ibu bicara + pikiran"
+  },
+  {
+   "id": "S36",
+   "size": "close-up",
+   "key": 14,
+   "len": 74,
+   "first": 1581,
+   "line": "Kamu nggak tahu, itu mulutnya, atau kepalanya.",
+   "note": "Pip pusing, dobel"
+  },
+  {
+   "id": "S36B",
+   "size": "close-up",
+   "key": 14,
+   "len": 50,
+   "first": 1655,
+   "line": "Kamu tutup telinga. Percuma.",
+   "note": "Tutup telinga, percuma"
+  },
+  {
+   "id": "S36C",
+   "size": "schematic",
+   "key": 14,
+   "len": 44,
+   "first": 1705,
+   "line": "Suaranya bukan dari luar.",
+   "note": "Pikiran di DALAM kepala"
+  },
+  {
+   "id": "S37",
+   "size": "wide push",
+   "key": 14,
+   "len": 87,
+   "first": 1749,
+   "line": "Lalu, di tengah kebisingan, ada satu pikiran yang beda.",
+   "note": "Satu pikiran dingin melayang masuk"
+  },
+  {
+   "id": "S38",
+   "size": "extreme close-up",
+   "key": 14,
+   "len": 46,
+   "first": 1836,
+   "line": "Tenang. Jelas.",
+   "note": "Mata jernih"
+  },
+  {
+   "id": "S39",
+   "size": "low angle",
+   "key": 14,
+   "len": 37,
+   "first": 1882,
+   "line": "Pria berjas di ujung tangga.",
+   "note": "Pria berjas di atas tangga"
+  },
+  {
+   "id": "S40",
+   "size": "close-up flash",
+   "key": 14,
+   "len": 22,
+   "first": 1919,
+   "line": "Orang yang sama.",
+   "note": "Orang yang sama"
+  },
+  {
+   "id": "S41",
+   "size": "extreme close-up",
+   "key": 14,
+   "len": 29,
+   "first": 1941,
+   "line": "Bibirnya diam.",
+   "note": "Mulut diam"
+  },
+  {
+   "id": "S42",
+   "size": "over the shoulder",
+   "key": 14,
+   "len": 63,
+   "first": 1970,
+   "line": "Pikirannya bilang, kami tahu kamu bisa dengar.",
+   "note": "KAMI TAHU."
+  },
+  {
+   "id": "S42B",
+   "size": "wide",
+   "key": 14,
+   "len": 79,
+   "first": 2033,
+   "line": "Lalu dia berbalik, dan pergi. Tanpa suara.",
+   "note": "Pria berjas naik pergi tanpa suara"
+  },
+  {
+   "id": "S43",
+   "size": "wide",
+   "key": 14,
+   "len": 63,
+   "first": 2112,
+   "line": "Malam itu, adikmu bilang dia nggak takut.",
+   "note": "Adik di kasur melambai"
+  },
+  {
+   "id": "S43B",
+   "size": "insert door",
+   "key": 14,
+   "len": 83,
+   "first": 2175,
+   "line": "Kamu matikan lampunya. Kamu tutup pintunya.",
+   "note": "Lampu mati, pintu ditutup"
+  },
+  {
+   "id": "S44",
+   "size": "close-up",
+   "key": 14,
+   "len": 55,
+   "first": 2258,
+   "line": "Lalu kamu dengar pikirannya berteriak.",
+   "note": "Pikiran merah: jendela"
+  },
+  {
+   "id": "S45",
+   "size": "insert",
+   "key": 14,
+   "len": 41,
+   "first": 2313,
+   "line": "Ada orang di jendela.",
+   "note": "Sosok di jendela"
+  },
+  {
+   "id": "S46",
+   "size": "wide",
+   "key": 14,
+   "len": 42,
+   "first": 2354,
+   "line": "Kamu lari ke kamarnya.",
+   "note": "Pip lari"
+  },
+  {
+   "id": "S47",
+   "size": "wide",
+   "key": 14,
+   "len": 39,
+   "first": 2396,
+   "line": "Jendelanya terbuka.",
+   "note": "Kasur kosong, jendela terbuka"
+  },
+  {
+   "id": "S47B",
+   "size": "close",
+   "key": 14,
+   "len": 73,
+   "first": 2435,
+   "line": "Cuma satu pikiran yang tersisa di kamar itu.",
+   "note": "Satu pikiran tersisa di kamar kosong"
+  },
+  {
+   "id": "S47C",
+   "size": "extreme close-up",
+   "key": 20,
+   "len": 53,
+   "first": 2508,
+   "line": "Dan itu bukan pikiran adikmu.",
+   "note": "X di gelembung jadi mata"
+  },
+  {
+   "id": "S48",
+   "size": "close-up",
+   "key": 14,
+   "len": 46,
+   "first": 2561,
+   "line": "Kalau kamu bisa dengar mereka,",
+   "note": "Pip menoleh, riak masuk"
+  },
+  {
+   "id": "S49",
+   "size": "black",
+   "key": 14,
+   "len": 91,
+   "first": 2607,
+   "line": "siapa yang selama ini dengar kamu?",
+   "note": "Pikiran asing: wajahmu"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#E6FBFF",
+   "f": 444
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "f": 1034
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "o": 0.5,
+   "f": 1338
+  },
+  {
+   "kind": "shake",
+   "len": 10,
+   "amp": 12,
+   "f": 1426
+  },
+  {
+   "kind": "flash",
+   "color": "#DDE6F2",
+   "o": 0.6,
+   "f": 1838
+  },
+  {
+   "kind": "flash",
+   "color": "#FF2233",
+   "o": 0.45,
+   "f": 2315
+  },
+  {
+   "kind": "shake",
+   "len": 8,
+   "amp": 10,
+   "f": 2398
+  }
+ ],
+ "audio": {
+  "voice": "dengar-pikiran/voice.wav",
+  "sfx": "dengar-pikiran/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.5471,
+  "music": "dengar-pikiran/music.wav",
+  "musicVol": 0.1312
+ }
+}

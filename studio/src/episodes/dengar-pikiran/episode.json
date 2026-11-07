@@ -1,0 +1,1181 @@
+{
+ "id": "DengarPikiran",
+ "slug": "dengar-pikiran",
+ "format": "portrait",
+ "topic": "Gimana kalau kamu bisa dengar pikiran orang?",
+ "title": [
+  "GIMANA KALAU",
+  "KAMU BISA DENGAR",
+  "PIKIRAN ORANG?"
+ ],
+ "accent": "PIKIRAN",
+ "voice": {
+  "provider": "narrator",
+  "recipe": "whatif-narator-v1"
+ },
+ "script": [
+  {
+   "beat": "1 cold open: demo 1 (small, selfish) - kitchen, mum",
+   "text": "Ibu bilang kuenya habis. Tapi kamu dengar pikirannya. Di lemari atas. Dapat."
+  },
+  {
+   "beat": "1 cold open: demo 2 (useful) - classroom, Mo",
+   "text": "Ulangan matematika. Kamu nggak tahu jawabannya. Temanmu tahu. Jawabannya dua belas. Seratus."
+  },
+  {
+   "beat": "1 cold open: demo 3 (uncanny) - stairwell, the stranger (the suit, unseen face)",
+   "text": "Orang asing lewat di tangga. Dia nggak bicara sepatah kata pun. Tapi dia memikirkan namamu."
+  },
+  {
+   "beat": "2 premise + rule (title card)",
+   "text": "Gimana kalau kamu bisa dengar pikiran orang? Semua orang di dekatmu. Dan nggak bisa dimatikan."
+  },
+  {
+   "beat": "3 the fun part",
+   "text": "Awalnya, ini luar biasa. Kamu tahu kado ulang tahunmu sebulan lebih awal. Main tebak kartu? Nggak pernah kalah. Kamu tahu siapa yang bohong. Kamu tahu siapa yang suka kamu. Di kelas, kamu ranking satu. Tanpa belajar. Hidupmu terasa seperti main game, pakai kode curang."
+  },
+  {
+   "beat": "4 the turn: the cost, one real fact",
+   "text": "Tapi pikiran nggak pernah diam. Rata-rata orang punya sekitar enam ribu dua ratus pikiran sehari. Itu nyata. Satu kelas, tiga puluh orang. Seratus delapan puluh enam ribu pikiran. Sehari. Semuanya masuk ke kepalamu."
+  },
+  {
+   "beat": "4b the consequence on screen",
+   "text": "Hari ketiga. Semua suara jadi satu. Kamu nggak bisa tidur. Kamu nggak bisa dengar pikiranmu sendiri. Ibu bicara. Kamu nggak tahu, itu mulutnya, atau kepalanya. Kamu tutup telinga. Percuma. Suaranya bukan dari luar."
+  },
+  {
+   "beat": "5 someone powerful notices",
+   "text": "Lalu, di tengah kebisingan, ada satu pikiran yang beda. Tenang. Jelas. Pria berjas di ujung tangga. Orang yang sama. Bibirnya diam. Pikirannya bilang, kami tahu kamu bisa dengar. Lalu dia berbalik, dan pergi. Tanpa suara."
+  },
+  {
+   "beat": "6 family at stake: little sister",
+   "text": "Malam itu, adikmu bilang dia nggak takut. Kamu matikan lampunya. Kamu tutup pintunya. Lalu kamu dengar pikirannya berteriak. Ada orang di jendela."
+  },
+  {
+   "beat": "7 cliffhanger",
+   "text": "Kamu lari ke kamarnya. Jendelanya terbuka. Cuma satu pikiran yang tersisa di kamar itu. Dan itu bukan pikiran adikmu. Kalau kamu bisa dengar mereka, siapa yang selama ini dengar kamu?"
+  }
+ ],
+ "science": [
+  {
+   "claim": "Rata-rata orang punya sekitar 6.200 pikiran sehari.",
+   "working": "Tseng & Poppenk (Queen's University) detected transitions between brain meta-states ('thought worms') in fMRI and, from their rate, estimate that the average person has about 6,200 thoughts per day. It is an estimate from their method, so the script says 'sekitar'.",
+   "source": "Tseng, J. & Poppenk, J. (2020), Nature Communications, 'Brain meta-state transitions demarcate thoughts across task contexts exposing the mental noise of trait neuroticism'; Queen's Gazette, 13 July 2020: 'they estimate that the average person has about 6,200 thoughts per day.'"
+  },
+  {
+   "claim": "Satu kelas, 30 orang: 186.000 pikiran sehari.",
+   "working": "30 x 6,200 = 186,000. A class of 30 is the story's assumption (said on screen).",
+   "source": "arithmetic"
+  }
+ ],
+ "gaps": {
+  "word": 0.12,
+  "comma": 0.2,
+  "sentence": 0.3,
+  "question": 0.42
+ },
+ "cast": [
+  "pipHood",
+  "mo",
+  "mom",
+  "sis",
+  "suit"
+ ],
+ "tail": 1.6,
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Ibu menunjukkan piring kosong"
+  },
+  {
+   "id": "S2",
+   "size": "close-up",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Riak cyan, mata Pip menyala"
+  },
+  {
+   "id": "S3",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Pikiran Ibu: lemari atas + toples"
+  },
+  {
+   "id": "S4",
+   "size": "medium low",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Pip memeluk toples, smug"
+  },
+  {
+   "id": "S5",
+   "size": "wide",
+   "set": "classroom",
+   "key": 14,
+   "note": "Ulangan matematika 48:4"
+  },
+  {
+   "id": "S6",
+   "size": "insert top-down",
+   "set": "desk",
+   "key": 14,
+   "note": "Kertas kosong, pensil ragu"
+  },
+  {
+   "id": "S7",
+   "size": "medium",
+   "set": "classroom",
+   "key": 14,
+   "note": "Pikiran Mo: 12"
+  },
+  {
+   "id": "S8",
+   "size": "insert top-down",
+   "set": "desk",
+   "key": 14,
+   "note": "Nilai 100 merah"
+  },
+  {
+   "id": "S9",
+   "size": "wide",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Orang asing turun tangga"
+  },
+  {
+   "id": "S10",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Berpapasan, wajah gelap"
+  },
+  {
+   "id": "S11",
+   "size": "close-up",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Pikiran dingin: wajah Pip"
+  },
+  {
+   "id": "S12",
+   "size": "title wide",
+   "set": "rooftop",
+   "key": 14,
+   "note": "Judul + pikiran kota"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "Lingkaran jangkauan"
+  },
+  {
+   "id": "S14",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "Saklar OFF gagal"
+  },
+  {
+   "id": "S15",
+   "size": "medium",
+   "set": "rooftop",
+   "key": 14,
+   "note": "Pip bersorak"
+  },
+  {
+   "id": "S16",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Ibu sembunyikan kado; pikiran: sepeda"
+  },
+  {
+   "id": "S17",
+   "size": "insert",
+   "set": "calendar",
+   "key": 14,
+   "note": "Kalender -30 hari"
+  },
+  {
+   "id": "S18",
+   "size": "insert top-down",
+   "set": "cards",
+   "key": 14,
+   "note": "Kartu Mo: 7 hati"
+  },
+  {
+   "id": "S19",
+   "size": "medium two-shot",
+   "set": "classroom",
+   "key": 14,
+   "note": "Pip menang, kartu Mo terbang"
+  },
+  {
+   "id": "S20",
+   "size": "medium",
+   "set": "classroom",
+   "key": 14,
+   "note": "Teman bohong: JUJUR dicoret"
+  },
+  {
+   "id": "S21",
+   "size": "over the shoulder",
+   "set": "classroom",
+   "key": 14,
+   "note": "Hati dari teman"
+  },
+  {
+   "id": "S22",
+   "size": "medium wide",
+   "set": "classroom",
+   "key": 14,
+   "note": "Ranking 1, medali"
+  },
+  {
+   "id": "S23",
+   "size": "close-up",
+   "set": "classroom",
+   "key": 14,
+   "note": "Kacamata hitam, santai"
+  },
+  {
+   "id": "S23B",
+   "size": "wide walk",
+   "set": "classroom",
+   "key": 14,
+   "note": "Hidup seperti game: CHEAT ON"
+  },
+  {
+   "id": "S24",
+   "size": "low medium",
+   "set": "classroom",
+   "key": 14,
+   "note": "Merah, pikiran mulai menumpuk"
+  },
+  {
+   "id": "S25",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "6.200 pikiran / hari"
+  },
+  {
+   "id": "S26",
+   "size": "close-up",
+   "set": "dark",
+   "key": 14,
+   "note": "Itu nyata + sumber"
+  },
+  {
+   "id": "S27",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "30 kepala"
+  },
+  {
+   "id": "S28",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "186.000"
+  },
+  {
+   "id": "S29",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "Jam 24 jam"
+  },
+  {
+   "id": "S30",
+   "size": "schematic push-in",
+   "set": "schematic",
+   "key": 14,
+   "note": "Semua masuk ke kepalamu"
+  },
+  {
+   "id": "S31",
+   "size": "insert",
+   "set": "calendar",
+   "key": 14,
+   "note": "Hari ketiga"
+  },
+  {
+   "id": "S32",
+   "size": "wide",
+   "set": "classroom",
+   "key": 14,
+   "note": "Kelas penuh pikiran abu"
+  },
+  {
+   "id": "S33",
+   "size": "wide",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Nggak bisa tidur 03:12"
+  },
+  {
+   "id": "S34",
+   "size": "close-up",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Pikiran sendiri tergencet"
+  },
+  {
+   "id": "S35",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Ibu bicara + pikiran"
+  },
+  {
+   "id": "S36",
+   "size": "close-up",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Pip pusing, dobel"
+  },
+  {
+   "id": "S36B",
+   "size": "close-up",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Tutup telinga, percuma"
+  },
+  {
+   "id": "S36C",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 14,
+   "note": "Pikiran di DALAM kepala"
+  },
+  {
+   "id": "S37",
+   "size": "wide push",
+   "set": "classroom",
+   "key": 14,
+   "note": "Satu pikiran dingin melayang masuk"
+  },
+  {
+   "id": "S38",
+   "size": "extreme close-up",
+   "set": "dark",
+   "key": 14,
+   "note": "Mata jernih"
+  },
+  {
+   "id": "S39",
+   "size": "low angle",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Pria berjas di atas tangga"
+  },
+  {
+   "id": "S40",
+   "size": "close-up flash",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Orang yang sama"
+  },
+  {
+   "id": "S41",
+   "size": "extreme close-up",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Mulut diam"
+  },
+  {
+   "id": "S42",
+   "size": "over the shoulder",
+   "set": "stairwell",
+   "key": 14,
+   "note": "KAMI TAHU."
+  },
+  {
+   "id": "S42B",
+   "size": "wide",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Pria berjas naik pergi tanpa suara"
+  },
+  {
+   "id": "S43",
+   "size": "wide",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Adik di kasur melambai"
+  },
+  {
+   "id": "S43B",
+   "size": "insert door",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Lampu mati, pintu ditutup"
+  },
+  {
+   "id": "S44",
+   "size": "close-up",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Pikiran merah: jendela"
+  },
+  {
+   "id": "S45",
+   "size": "insert",
+   "set": "window",
+   "key": 14,
+   "note": "Sosok di jendela"
+  },
+  {
+   "id": "S46",
+   "size": "wide",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Pip lari"
+  },
+  {
+   "id": "S47",
+   "size": "wide",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Kasur kosong, jendela terbuka"
+  },
+  {
+   "id": "S47B",
+   "size": "close",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Satu pikiran tersisa di kamar kosong"
+  },
+  {
+   "id": "S47C",
+   "size": "extreme close-up",
+   "set": "bedroom",
+   "key": 20,
+   "note": "X di gelembung jadi mata"
+  },
+  {
+   "id": "S48",
+   "size": "close-up",
+   "set": "bedroom",
+   "key": 14,
+   "note": "Pip menoleh, riak masuk"
+  },
+  {
+   "id": "S49",
+   "size": "black",
+   "set": "black",
+   "key": 14,
+   "note": "Pikiran asing: wajahmu"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "Ibu"
+  },
+  {
+   "shot": "S2",
+   "at": "Tapi",
+   "look": "listen"
+  },
+  {
+   "shot": "S3",
+   "at": "Di",
+   "look": "listen"
+  },
+  {
+   "shot": "S4",
+   "at": "Dapat"
+  },
+  {
+   "shot": "S5",
+   "at": "Ulangan"
+  },
+  {
+   "shot": "S6",
+   "at": "Kamu"
+  },
+  {
+   "shot": "S7",
+   "at": "Temanmu",
+   "look": "listen"
+  },
+  {
+   "shot": "S8",
+   "at": "Seratus"
+  },
+  {
+   "shot": "S9",
+   "at": "Orang"
+  },
+  {
+   "shot": "S10",
+   "at": "Dia"
+  },
+  {
+   "shot": "S11",
+   "at": "Tapi",
+   "look": "listen"
+  },
+  {
+   "shot": "S12",
+   "at": "Gimana"
+  },
+  {
+   "shot": "S13",
+   "at": "Semua"
+  },
+  {
+   "shot": "S14",
+   "at": "Dan"
+  },
+  {
+   "shot": "S15",
+   "at": "Awalnya"
+  },
+  {
+   "shot": "S16",
+   "at": "Kamu",
+   "look": "listen"
+  },
+  {
+   "shot": "S17",
+   "at": "sebulan"
+  },
+  {
+   "shot": "S18",
+   "at": "Main",
+   "look": "listen"
+  },
+  {
+   "shot": "S19",
+   "at": "Nggak"
+  },
+  {
+   "shot": "S20",
+   "at": "Kamu",
+   "look": "listen"
+  },
+  {
+   "shot": "S21",
+   "at": "Kamu",
+   "look": "listen"
+  },
+  {
+   "shot": "S22",
+   "at": "Di"
+  },
+  {
+   "shot": "S23",
+   "at": "Tanpa"
+  },
+  {
+   "shot": "S23B",
+   "at": "Hidupmu"
+  },
+  {
+   "shot": "S24",
+   "at": "Tapi"
+  },
+  {
+   "shot": "S25",
+   "at": "diam+10"
+  },
+  {
+   "shot": "S26",
+   "at": "Itu"
+  },
+  {
+   "shot": "S27",
+   "at": "Satu"
+  },
+  {
+   "shot": "S28",
+   "at": "Seratus"
+  },
+  {
+   "shot": "S29",
+   "at": "Sehari"
+  },
+  {
+   "shot": "S30",
+   "at": "Semuanya"
+  },
+  {
+   "shot": "S31",
+   "at": "Hari"
+  },
+  {
+   "shot": "S32",
+   "at": "Semua",
+   "look": "noise"
+  },
+  {
+   "shot": "S33",
+   "at": "Kamu",
+   "look": "noise"
+  },
+  {
+   "shot": "S34",
+   "at": "Kamu",
+   "look": "noise"
+  },
+  {
+   "shot": "S35",
+   "at": "Ibu",
+   "look": "noise"
+  },
+  {
+   "shot": "S36",
+   "at": "Kamu",
+   "look": "noise"
+  },
+  {
+   "shot": "S36B",
+   "at": "Kamu",
+   "look": "noise"
+  },
+  {
+   "shot": "S36C",
+   "at": "Suaranya",
+   "look": "noise"
+  },
+  {
+   "shot": "S37",
+   "at": "Lalu"
+  },
+  {
+   "shot": "S38",
+   "at": "Tenang"
+  },
+  {
+   "shot": "S39",
+   "at": "Pria"
+  },
+  {
+   "shot": "S40",
+   "at": "Orang"
+  },
+  {
+   "shot": "S41",
+   "at": "Bibirnya"
+  },
+  {
+   "shot": "S42",
+   "at": "Pikirannya",
+   "look": "listen"
+  },
+  {
+   "shot": "S42B",
+   "at": "Lalu"
+  },
+  {
+   "shot": "S43",
+   "at": "Malam"
+  },
+  {
+   "shot": "S43B",
+   "at": "Kamu"
+  },
+  {
+   "shot": "S44",
+   "at": "Lalu",
+   "look": "listen"
+  },
+  {
+   "shot": "S45",
+   "at": "Ada"
+  },
+  {
+   "shot": "S46",
+   "at": "Kamu"
+  },
+  {
+   "shot": "S47",
+   "at": "Jendelanya"
+  },
+  {
+   "shot": "S47B",
+   "at": "Cuma"
+  },
+  {
+   "shot": "S47C",
+   "at": "Dan"
+  },
+  {
+   "shot": "S48",
+   "at": "Kalau"
+  },
+  {
+   "shot": "S49",
+   "at": "siapa"
+  }
+ ],
+ "fx": [
+  {
+   "at": "Gimana",
+   "kind": "flash",
+   "color": "#E6FBFF"
+  },
+  {
+   "at": "Tapi#3",
+   "kind": "flash",
+   "color": "#FF3344"
+  },
+  {
+   "at": "Semuanya",
+   "kind": "flash",
+   "color": "#FF3344",
+   "o": 0.5
+  },
+  {
+   "at": "Semua#2",
+   "kind": "shake",
+   "len": 10,
+   "amp": 12
+  },
+  {
+   "at": "Tenang",
+   "kind": "flash",
+   "color": "#DDE6F2",
+   "o": 0.6
+  },
+  {
+   "at": "Ada#2",
+   "kind": "flash",
+   "color": "#FF2233",
+   "o": 0.45
+  },
+  {
+   "at": "Jendelanya",
+   "kind": "shake",
+   "len": 8,
+   "amp": 10
+  }
+ ],
+ "sound": {
+  "clips": {
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "class_murmur": [
+    "a quiet classroom murmur, kids whispering, chairs shuffling",
+    2.0
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "dark_bed": [
+    "derived: synthesised low drone pad with a slow heartbeat pulse, ominous, 70 bpm",
+    24.0
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "ding": [
+    "a correct answer ding, bright bell chime",
+    0.8
+   ],
+   "shades": [
+    "cool sunglasses sliding on with a swoosh and a bright metallic glint",
+    0.9
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "laugh": [
+    "a small classroom of kids bursting out laughing",
+    1.6
+   ],
+   "gasp": [
+    "two young people gasping in surprise at the same moment, cartoon, short",
+    0.8
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "glitch": [
+    "a short digital glitch, an electric buzz and crackle flickering like an unstable hologram",
+    1.5
+   ],
+   "knock": [
+    "derived: catch-ffb439cd lowpass 900 Hz, a knuckle knock on a wooden door",
+    0.5
+   ],
+   "step": [
+    "a single sneaker footstep on a wooden stair, close",
+    0.5
+   ],
+   "land": [
+    "a heavy body landing flat on a wooden floor, cartoon thud",
+    0.6
+   ],
+   "select_draw": [
+    "a quick digital selection sound, a soft rising electronic shimmer as a box is drawn on screen, short",
+    0.6
+   ],
+   "copy_click": [
+    "a crisp satisfying computer copy click with a tiny soft digital chime, short",
+    0.5
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "room_tone",
+    0.12,
+    "onset",
+    "S5"
+   ],
+   [
+    "S2+2",
+    "select_draw",
+    0.4
+   ],
+   [
+    "S3+4",
+    "pop",
+    0.3
+   ],
+   [
+    "S4+4",
+    "sparkle",
+    0.3
+   ],
+   [
+    "S5",
+    "class_murmur",
+    0.15,
+    "onset",
+    "S9"
+   ],
+   [
+    "S7+3",
+    "pop",
+    0.3
+   ],
+   [
+    "S8+5",
+    "ding",
+    0.35
+   ],
+   [
+    "S9",
+    "room_tone",
+    0.1,
+    "onset",
+    "S12"
+   ],
+   [
+    "S11+6",
+    "drone_hit",
+    0.18
+   ],
+   [
+    "Gimana",
+    "title_boom",
+    0.6,
+    "peak"
+   ],
+   [
+    "S12",
+    "roof_wind",
+    0.14,
+    "onset",
+    "S16"
+   ],
+   [
+    "S13+14",
+    "select_draw",
+    0.3
+   ],
+   [
+    "S14+4",
+    "copy_click",
+    0.5
+   ],
+   [
+    "S14+16",
+    "copy_click",
+    0.5
+   ],
+   [
+    "S14+22",
+    "glitch",
+    0.18
+   ],
+   [
+    "S15+7",
+    "sparkle",
+    0.18
+   ],
+   [
+    "S16",
+    "room_tone",
+    0.1,
+    "onset",
+    "S18"
+   ],
+   [
+    "S16+4",
+    "pop",
+    0.3
+   ],
+   [
+    "S17+8",
+    "ding",
+    0.25
+   ],
+   [
+    "S18",
+    "class_murmur",
+    0.12,
+    "onset",
+    "S24"
+   ],
+   [
+    "S18+4",
+    "pop",
+    0.3
+   ],
+   [
+    "S19+5",
+    "land",
+    0.35
+   ],
+   [
+    "S19+8",
+    "gasp",
+    0.4
+   ],
+   [
+    "S20+4",
+    "pop",
+    0.3
+   ],
+   [
+    "S21+6",
+    "sparkle",
+    0.2
+   ],
+   [
+    "S22+2",
+    "laugh",
+    0.25
+   ],
+   [
+    "S23+3",
+    "shades",
+    0.45
+   ],
+   [
+    "S24",
+    "drone_hit",
+    0.18
+   ],
+   [
+    "S25",
+    "counter_tick",
+    0.16,
+    "onset",
+    "S26"
+   ],
+   [
+    "S28",
+    "counter_tick",
+    0.16,
+    "onset",
+    "S29"
+   ],
+   [
+    "S30+4",
+    "glitch",
+    0.18
+   ],
+   [
+    "S32",
+    "class_murmur",
+    0.14,
+    "onset",
+    "S33"
+   ],
+   [
+    "S32",
+    "glitch",
+    0.18
+   ],
+   [
+    "S33",
+    "room_tone",
+    0.12,
+    "onset",
+    "S35"
+   ],
+   [
+    "S36+2",
+    "glitch",
+    0.18
+   ],
+   [
+    "S38+2",
+    "select_draw",
+    0.35
+   ],
+   [
+    "S39",
+    "drone_hit",
+    0.18
+   ],
+   [
+    "S40",
+    "glitch",
+    0.18
+   ],
+   [
+    "S42+6",
+    "pop",
+    0.25
+   ],
+   [
+    "S43",
+    "room_tone",
+    0.1,
+    "onset",
+    "S46"
+   ],
+   [
+    "S44+3",
+    "drone_hit",
+    0.18
+   ],
+   [
+    "S45+4",
+    "glitch",
+    0.18
+   ],
+   [
+    "S47",
+    "roof_wind",
+    0.08,
+    "onset",
+    "S49"
+   ],
+   [
+    "S49+48",
+    "drone_hit",
+    0.45
+   ],
+   [
+    "S23B+3",
+    "sparkle",
+    0.25
+   ],
+   [
+    "S36B+3",
+    "land",
+    0.2
+   ],
+   [
+    "S36C",
+    "glitch",
+    0.18
+   ],
+   [
+    "lampunya+10",
+    "copy_click",
+    0.4
+   ],
+   [
+    "pintunya+10",
+    "knock",
+    0.25
+   ],
+   [
+    "S47B+4",
+    "select_draw",
+    0.3
+   ],
+   [
+    "adikmu+14",
+    "drone_hit",
+    0.18
+   ]
+  ],
+  "repeats": [
+   {
+    "at": "S9",
+    "clip": "step",
+    "n": 8,
+    "every": 4,
+    "gain": [
+     0.15,
+     0.25
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ]
+   },
+   {
+    "at": "S46",
+    "clip": "step",
+    "n": 7,
+    "every": 3,
+    "gain": [
+     0.25,
+     0.35
+    ],
+    "pitch": [
+     1.0,
+     1.2
+    ]
+   }
+  ],
+  "music": [
+   {
+    "clip": "music",
+    "until": "Gimana",
+    "loop": true
+   },
+   {
+    "clip": "music",
+    "from": "Gimana+20",
+    "until": "Tapi#3",
+    "loop": true
+   },
+   {
+    "clip": "dark_bed",
+    "from": "Tapi#3",
+    "loop": true
+   }
+  ],
+  "levels": {
+   "sfx_lu": -5.0,
+   "music_lu": -12.0
+  }
+ }
+}

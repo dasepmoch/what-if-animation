@@ -12,10 +12,10 @@ never repeats itself: read it before choosing, and update it in the same commit 
 | putar-balik | Gimana kalau kamu bisa memutar balik 10 detik? | time | |
 | tanpa-tidur | Gimana kalau kamu gak pernah butuh tidur lagi? | body | sleep biology |
 | gravitasi | Gimana kalau gravitasimu tinggal sepuluh persen? | physics / body | gravity and weight |
+| dengar-pikiran | Gimana kalau kamu bisa dengar pikiran orang? | senses / mind | ~6,200 thoughts a day (Tseng & Poppenk 2020) |
 
 ## Backlog (ideas not made yet; the agent adds to it, takes from the top, and moves a used one to Done)
 
-- Gimana kalau kamu bisa dengar pikiran orang?  (senses; turn: how fast the brain processes speech)
 - Gimana kalau kamu bisa lihat 1 jam ke depan?  (time/senses; turn: chaos, small changes grow)
 - Gimana kalau kamu bisa berhenti waktu?  (time; turn: frozen air molecules, you couldn't breathe or move through it)
 - Gimana kalau kamu nggak bisa merasakan sakit?  (body; turn: congenital insensitivity to pain is real and dangerous)
@@ -27,3 +27,4 @@ never repeats itself: read it before choosing, and update it in the same commit 
 - Gimana kalau kamu nggak pernah lupa apa pun?  (mind; turn: hyperthymesia is real)
 - Gimana kalau setiap bohongmu jadi kenyataan?  (luck/rules; turn: how many times a day people lie)
 - Gimana kalau kamu bisa napas di bawah air?  (body; turn: how little oxygen water holds vs air)
+- Gimana kalau kamu bisa melihat dalam gelap?  (senses; turn: how many photons the eye needs)

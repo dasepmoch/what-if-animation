@@ -33,7 +33,7 @@ everything itself, without asking what it should be about or how long it should 
    "Choosing a topic" in `references/formula.md`: an everyday power with clear rules, a hidden cost from real science,
    a power family not used in the last two episodes, and never a power already in Done. Search YouTube for the premise;
    if a What If channel already has that exact title, change the power or the rule.
-2. **Write it** on the seven-beat formula in the house style below (Indonesian, ~90 s, 180-230 words, short punchy
+2. **Write it** on the seven-beat formula in the house style below (Indonesian, ~90 s, 240-270 words, short punchy
    lines), with every number worked out and sourced in `science` before voicing.
 3. **Run the whole pipeline** (steps 1-8) without stopping for approval of the topic or script. Say in one line which
    topic was chosen and why. Self-check the storyboard and send it, then keep going unless the person stops you.
@@ -49,7 +49,7 @@ A topic or length the person does give always wins.
 - **Format:** portrait 9:16, 1080x1920, for Shorts. 16:9 only when asked.
 - **Length (default, no need to be told):** when someone asks for a "short", "Shorts", "portrait" or just "a What If
   video" without a length, make it **about 90 seconds (1.5 min), never over 2 minutes**, and don't ask how long. That
-  is **180 to 230 words** for ~90 s (up to about 280 words if the topic needs the full 2 min). Only a length the
+  is **240 to 270 words** for ~90 s (the locked narrator speaks about 2.8 words a second after voice.py; up to about 330 words for the full 2 min). Measured on dengar-pikiran: 207 words gave 74.8 s, 251 words about 90 s. Only a length the
   person states overrides this. Check the final duration in `report.json`: 80-120 s is on target. Short punchy sentences (3-6 words), all seven
   beats in full (cold open with 3 demos, title, fun with real numbers, the turn with one checked fact and "Itu nyata.",
   the consequence on screen, the suit, the sister, a cliffhanger question). About 45-50 shots, 30+ cuts a minute.
@@ -104,7 +104,7 @@ Read `references/formula.md`. Search YouTube for the premise first: if a What If
 episode, change the power or the rule. From the topic line, decide the power's word, its rule, three escalating
 demos and the turn (one real fact with a number). Write `src/episodes/<slug>/episode.json` with `id` (PascalCase,
 the composition name), `slug`, `topic`, `title` (two lines), `script` (one entry per beat) and `science` (each fact:
-the claim, the working, the source). 180 to 230 words for the house ~1.5 minute episode (120 to 160 for a 1-minute one, 45 to 65 for a 15-25 s teaser). Read it aloud at pace: every line must be a picture.
+the claim, the working, the source). 240 to 270 words for the house ~1.5 minute episode (160 to 180 for a 1-minute one, 45 to 65 for a 15-25 s teaser). Read it aloud at pace: every line must be a picture.
 
 ### 2. Voice: the locked narrator `whatif-narator-v1` (default)
 

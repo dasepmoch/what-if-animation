@@ -4,5 +4,6 @@ import { copyPaste } from './copy-paste';
 import { putarBalik } from './putar-balik';
 import { tanpaTidur } from './tanpa-tidur';
 import { gravitasi } from './gravitasi';
+import { dengarPikiran } from './dengar-pikiran';
 
-export const EPISODES = [rewind, copyPaste, putarBalik, tanpaTidur, gravitasi];
+export const EPISODES = [rewind, copyPaste, putarBalik, tanpaTidur, gravitasi, dengarPikiran];

@@ -60,6 +60,16 @@ shot or a character.
 - **Lands and catches** need the prop to follow the hand exactly: compute the hand with `toWorld(pose,
   joints(pose).armR.end)` and attach the prop there (the proof clip's catch).
 
+## Voice (the locked narrator)
+
+- **A sentence that is only a number gets skipped.** "Temanmu tahu. Dua belas. Seratus." came out with no "Dua belas" in
+  both takes (no gap in the Whisper timings). Put a number inside a sentence: "Jawabannya dua belas."
+- **CER is inflated by digits.** Whisper writes "6.200" for "enam ribu dua ratus", so a perfect take can score CER 0.3.
+  Read the `heard` text in `narrator_report.json` before re-generating a beat.
+- **Pace:** the narrator runs about 2.8 words a second after voice.py: ~250 words for 90 s.
+- **On an 8 GB Mac the Whisper pass swaps** (2-7 min a beat). Do the voice-independent work meanwhile; never render at
+  the same time.
+
 ## Sound
 
 - **A pop on a word covers the word.** Land illustrative hits in the pause after their word (see `sound.md`).
