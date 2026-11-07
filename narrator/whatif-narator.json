@@ -1,0 +1,49 @@
+{
+ "name": "whatif-narator-v1",
+ "language": "Indonesian",
+ "instruct": "male, young adult, moderate pitch",
+ "anchor_text": "Bayangkan kalau besok pagi, satu hal di hidupmu berubah total. Kedengarannya seru. Tapi tunggu sampai kamu tahu harganya.",
+ "anchor_seeds": [
+  7,
+  21,
+  42,
+  77
+ ],
+ "num_step": 32,
+ "guidance_scale": 2.0,
+ "t_shift": 0.1,
+ "speed": 1.05,
+ "beat_gap": 0.42,
+ "question_gap": 0.5,
+ "target_rms_db": -20.0,
+ "seed_base": 1000,
+ "anchor_seed": 77,
+ "anchor_cer": 0.0,
+ "created": "2026-11-07 15:12",
+ "candidates": [
+  {
+   "seed": 77,
+   "cer": 0.0,
+   "dur": 7.23,
+   "heard": "Bayangkan kalau besok pagi satu hal di hidupmu berubah total. Kedengarannya seru, tapi tunggu sampai kamu tahu harganya."
+  },
+  {
+   "seed": 21,
+   "cer": 0.0,
+   "dur": 7.27,
+   "heard": "Bayangkan kalau besok pagi, satu hal di hidupmu berubah total. Kedengarannya seru, tapi tunggu sampai kamu tahu harganya."
+  },
+  {
+   "seed": 7,
+   "cer": 0.0,
+   "dur": 7.28,
+   "heard": "Bayangkan kalau besok pagi, satu hal di hidupmu berubah total. Kedengarannya seru, tapi tunggu sampai kamu tahu harganya."
+  },
+  {
+   "seed": 42,
+   "cer": 0.11,
+   "dur": 7.28,
+   "heard": "Bayangkan kalau besok pagi, satu hal di hidupmu berubah total, kedengarannya sebuah, tapi tunggu sampai kamu tahu."
+  }
+ ]
+}

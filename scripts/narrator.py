@@ -158,6 +158,14 @@ if args.new_anchor and anchor_pt.exists():
     for q in REFS.glob('whatif-narator*'):
         shutil.move(str(q), arch / q.name)
     log(f'--new-anchor: old narrator archived to {arch}')
+# The approved narrator ships with the repo (narrator/). On a machine whose TTS-ENGINE has no refs yet, install
+# those exact files instead of designing a new voice, so every machine and every agent uses the same narrator.
+REPO_REFS = pathlib.Path(__file__).resolve().parent.parent / 'narrator'
+if not anchor_pt.exists() and not args.new_anchor and (REPO_REFS / 'whatif-narator.lock.json').exists():
+    import shutil
+    for q in REPO_REFS.glob('whatif-narator*'):
+        shutil.copy(q, REFS / q.name)
+    log(f'Installed the approved narrator from {REPO_REFS} into {REFS}')
 need_anchor = not anchor_pt.exists()
 if not need_anchor:
     if not LOCK.exists():

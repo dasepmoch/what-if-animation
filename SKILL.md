@@ -1,11 +1,11 @@
 ---
 name: what-if-animation
-description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Standard length: ~1 minute (50-60 s) for Shorts/TikTok or 15-25 s for short demos. Writes the script on the seven-beat What If formula, voices it with local neural TTS (OmniVoice + Whisper word timestamps, Indonesian default) or ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), mixes and syncs the sound, and masters a finished episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
+description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. House standard: Indonesian, portrait 9:16 Shorts, 1-2 min (aim ~1.5 min), the locked narrator voice and animated captions. Writes the script on the seven-beat What If formula, voices it with local neural TTS (OmniVoice + Whisper word timestamps, Indonesian default) or ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), mixes and syncs the sound, and masters a finished episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
 ---
 
 # What If animation
 
-One topic line in, a finished 15-25 second episode out. Every frame is SVG that Claude writes (rendered by
+One topic line in, a finished episode out (house standard below: Indonesian, portrait, about 1.5 minutes). Every frame is SVG that Claude writes (rendered by
 Remotion); the voice is synthesized with local OmniVoice (with word timestamps via Whisper) or ElevenLabs, and sound comes from the included sound library. Two examples ship in `studio/src/episodes/`, both ready to
 render: `rewind` ("What if you could rewind 10 seconds?", the proof clip: shots played backwards as the power) and
 `copy-paste` ("What if you could copy and paste anything?", the skill's first full run: a new kitchen set, a
@@ -18,10 +18,52 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 | `references/kit.md` | The building blocks: engine, cast, sets, room kit, light, UI, looks, and how to add each |
 | `references/sound.md` | Writing sound events, prompts, levels, costs |
 | `references/traps.md` | Everything that cost time on the two example episodes |
+| `TOPICS.md` | Episodes already made and the topic backlog (read before choosing; update with each episode) |
 | `studio/src/episodes/gravitasi` | The portrait (9:16 Shorts) example with the locked narrator and animated captions |
 | `studio/` | The Remotion project: copy it once, then every episode lives in it |
 | `scripts/` | voice, narrator, subtitles, plan, stills, board, sfx, mixcheck, motiongrid, master (Python 3.9+ and Node) |
 | `scripts/cloud/` | Portrait-aware stills, render and contact-sheet helpers (Mac or cloud sandbox) |
+
+## Autopilot: no topic given
+
+The person may just say "bikin video What If", "bikin short", "bikin 3 episode" with no topic. Then the agent does
+everything itself, without asking what it should be about or how long it should be:
+
+1. **Pick the topic.** Read `TOPICS.md`. Take the best idea from the backlog (or invent a better one) that follows
+   "Choosing a topic" in `references/formula.md`: an everyday power with clear rules, a hidden cost from real science,
+   a power family not used in the last two episodes, and never a power already in Done. Search YouTube for the premise;
+   if a What If channel already has that exact title, change the power or the rule.
+2. **Write it** on the seven-beat formula in the house style below (Indonesian, ~90 s, 180-230 words, short punchy
+   lines), with every number worked out and sourced in `science` before voicing.
+3. **Run the whole pipeline** (steps 1-8) without stopping for approval of the topic or script. Say in one line which
+   topic was chosen and why. Self-check the storyboard and send it, then keep going unless the person stops you.
+4. **Keep the list going.** In the same commit as the episode, move the topic to Done in `TOPICS.md` and top the
+   backlog back up to at least 10 fresh ideas, so the next run (by any agent) has topics ready.
+5. **Several episodes** ("bikin 3", "lanjut terus"): do them one after another, each a different power family.
+
+A topic or length the person does give always wins.
+
+## House standard (the channel's defaults; any agent using this repo follows them)
+
+- **Language and title:** Indonesian. Title "GIMANA KALAU ..." (three lines in portrait: a small line, then two big lines).
+- **Format:** portrait 9:16, 1080x1920, for Shorts. 16:9 only when asked.
+- **Length (default, no need to be told):** when someone asks for a "short", "Shorts", "portrait" or just "a What If
+  video" without a length, make it **about 90 seconds (1.5 min), never over 2 minutes**, and don't ask how long. That
+  is **180 to 230 words** for ~90 s (up to about 280 words if the topic needs the full 2 min). Only a length the
+  person states overrides this. Check the final duration in `report.json`: 80-120 s is on target. Short punchy sentences (3-6 words), all seven
+  beats in full (cold open with 3 demos, title, fun with real numbers, the turn with one checked fact and "Itu nyata.",
+  the consequence on screen, the suit, the sister, a cliffhanger question). About 45-50 shots, 30+ cuts a minute.
+- **Voice:** always the locked narrator in `narrator/` (approved by the channel owner on 7 Nov 2026, anchor seed 77).
+  Never design a new voice, never use instruct-only OmniVoice or ElevenLabs for an episode unless the owner asks.
+- **Captions:** every episode has the animated captions burned in and ships an `.srt` (step 6 and step 8).
+- **Portrait framing:** `camV(cx, cy, zoom)`; room sets fill the tall frame from zoom about 1.15. Wides 1.15-1.4,
+  mediums 1.9-2.4, close-ups 3-4.5, inserts in world units around (960, 960) at zoom 1. Use the height (jumps, falls,
+  stacked floors, sky). Title and readouts in the upper middle, captions at about 64% height, everything clear of the
+  bottom 20% and the right edge (Shorts UI). Shot ids with a letter suffix (S16B) need the regex `/^S\d+[A-Z]?$/`.
+- **Order of work:** everything that doesn't need the voice first (script, science, shots, storyboard, a silent
+  half-scale animatic), so the only wait is the narrator run. Show the storyboard before animating.
+- **Hand-over:** `<slug>-final.mp4`, `<slug>.srt` and `storyboard.jpg`; keep the episode's files in
+  `src/episodes/<slug>/` and commit them.
 
 ## Rules
 
@@ -62,12 +104,14 @@ Read `references/formula.md`. Search YouTube for the premise first: if a What If
 episode, change the power or the rule. From the topic line, decide the power's word, its rule, three escalating
 demos and the turn (one real fact with a number). Write `src/episodes/<slug>/episode.json` with `id` (PascalCase,
 the composition name), `slug`, `topic`, `title` (two lines), `script` (one entry per beat) and `science` (each fact:
-the claim, the working, the source). 120 to 160 words for a standard ~1 minute (50-60 s) episode (or 45 to 65 words for a quick 15-25 s teaser). Read it aloud at pace: every line must be a picture.
+the claim, the working, the source). 180 to 230 words for the house ~1.5 minute episode (120 to 160 for a 1-minute one, 45 to 65 for a 15-25 s teaser). Read it aloud at pace: every line must be a picture.
 
 ### 2. Voice: the locked narrator `whatif-narator-v1` (default)
 
 Every episode uses the same narrator, and it must sound identical each time. `scripts/narrator.py` does that: one
-anchor voice designed once and saved as a clone prompt in `TTS-ENGINE/refs/whatif-narator.{wav,txt,pt,json}`, and
+anchor voice, designed once and approved, ships in this repo's `narrator/` folder (`whatif-narator.{wav,txt,pt,json}`
++ `lock.json`). On a machine whose `TTS-ENGINE/refs/` is empty, narrator.py installs those exact files there first,
+so every machine and every agent gets the same narrator; it never designs a new one by itself. And
 every episode **clones** it (OmniVoice's instruct-only voice drifts between calls). Each beat is generated with fixed
 seeds (`1000 + 17*beat + take`, 2 takes), num_step 32, guidance 2.0, t_shift 0.1, speed 1.05; Whisper keeps the
 take with the lowest character error rate; beats are trimmed, levelled to -20 dB RMS and joined with 0.42 s gaps
@@ -83,8 +127,11 @@ with `HF_HUB_OFFLINE=1`. The first anchor run writes `refs/whatif-narator.lock.j
 the anchor files, model snapshots); every later run checks it and stops with `NARRATOR LOCK FAILED` if anything
 differs. Never edit `RECIPE`, never delete the lock, don't `git pull`/`uv sync` the TTS engine mid-series. Only
 `--new-anchor` makes a new narrator (it archives the old refs), and only when the person asks for a new voice. The
-first time, play `refs/whatif-narator.wav` to the person before voicing anything. Same text + same seed gives
-bit-identical audio on the same Mac (verified on MPS, fp16, torch 2.8.0).
+Same text + same seed gives bit-identical audio on the
+reference setup (Apple Silicon MPS, fp16, torch 2.8.0, verified also from a fresh refs folder installed from the repo).
+On a different GPU or torch version it is still the same cloned narrator, but the samples can differ slightly; use
+the reference setup for episodes. Setting up the engine on a new machine: clone k2-fsa/OmniVoice, `uv sync`, download
+the two pinned model revisions above, keep torch 2.8.0.
 
 Then: any beat with CER > 0.1 in `narrator_report.json` → re-run with `--beats N --takes 4`. Copy `voice_raw.wav` to
 `public/<slug>/`, `words_raw.json` + `narrator_report.json` to `out/<slug>/`, set `"voice": {"provider": "narrator"}`
@@ -250,6 +297,7 @@ Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final
 | `src/episodes/<slug>/words.json`, `timeline.json` | Written by voice.py and plan.py (sfx.py adds the volumes) |
 | `public/<slug>/` | voice.wav, sfx.wav, music.wav |
 | `out/<slug>/voice/` | narrator.py's takes, narrator.log, narrator_report.json |
-| `TTS-ENGINE/refs/whatif-narator.*` | The locked narrator: anchor wav/txt/pt, recipe json, lock.json (never delete) |
+| `narrator/whatif-narator.*` | The approved, locked narrator (anchor wav/txt/pt, recipe json, lock.json); never edit |
+| `TTS-ENGINE/refs/whatif-narator.*` | The engine's working copy, installed from `narrator/` by narrator.py |
 | `out/<slug>/` | board stills, storyboard.jpg, shotlist.md, motion grids, renders, costs.json, report.json |
 | `library/sfx/` | Every generated sound clip, shared by all episodes |

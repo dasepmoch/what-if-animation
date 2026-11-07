@@ -8,3 +8,6 @@ what-if-studio/
 .DS_Store
 *.wav
 
+
+# the locked narrator anchor is part of the repo
+!narrator/*.wav

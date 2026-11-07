@@ -1,0 +1,17 @@
+{
+ "recipe": "whatif-narator-v1",
+ "recipe_fp": "158306653434c472",
+ "anchor_seed": 77,
+ "models": {
+  "omnivoice": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "whisper": "41f01f3fe87f28c78e2fbf8b568835947dd65ed9"
+ },
+ "files": {
+  "whatif-narator.wav": "4888fe546c7623c6e2baabde9420578af860e3a48f99e0ba956a9dcfbcf64b87",
+  "whatif-narator.txt": "43e76723fc2c02d9a7a0045bee369b184e26c15470a3738b3bb72f34bfc2543d",
+  "whatif-narator.pt": "1d09c31a7c8a55a9767fa85efc900a74d11383775c535a8a41d148aa4e51a6ff"
+ },
+ "torch": "2.8.0",
+ "device": "mps",
+ "created": "2026-11-07 15:12"
+}
